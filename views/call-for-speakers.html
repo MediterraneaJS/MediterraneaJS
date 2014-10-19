@@ -1,0 +1,112 @@
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <h3>Call for Speakers</h3>
+    <p>We are inviting the JavaScript community to submit talks for the upcoming MediterráneaJS. If you know someone who may deliver an interesting talk, please let us know and we'll contact them.</p>
+    <p>Our talk selection process favors content (blind selection process); We want our community to be inclusive!</p>
+    <p>If you get selected as a speaker, we'll cover flight and accommodation in Barcelona. If your company can cover your travel, we're happy to list them as sponsors and the saved money will be used to make the conference even better!</p>
+    <form class="form-horizontal" role="form" action="/speakers/apply" method="post">
+      <fieldset>
+        <legend>About you</legend>
+        <div class="form-group">
+          <label for="cfs-" class="control-label col-xs-4 ">Email</label>
+          <div class="col-xs-8">
+            <input type="email" name="cfs-email" class="form-control" id="cfs-email" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cfs-name" class="control-label col-xs-4">Name</label>
+          <div class="col-xs-8">
+            <input type="text" name="cfs-name" class="form-control" id="cfs-name" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cfs-twitter" class="control-label col-xs-4">Twitter</label>
+          <div class="col-xs-8">
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="text" name="cfs-twitter" id="cfs-twitter" class="form-control" placeholder="twitter">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>About your talk</legend>
+        <div class="form-group">
+          <label for="cfs-title" class="control-label col-xs-4">Title</label>
+          <div class="col-xs-8">
+            <input type="text" name="cfs-title" class="form-control" id="cfs-title" placeholder="Title">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cfs-description" class="control-label col-xs-4">Description</label>
+          <div class="col-xs-8">
+            <div class="input-group col-xs-12">
+              <textarea name="cfs-description" class="form-control" rows="5"></textarea>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Almost there ...</legend>
+        <div class="col-xs-10 col-xs-offset-2">
+          <p>Could your company cover your trip and become a sponsor?</p>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-10 col-xs-offset-2">
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-sponsor" id="cfs-sponsor-yes" required="required" value="yes">Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-sponsor" id="cfs-sponsor-no" value="no">No
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-sponsor" id="cfs-sponsor-maybe" value="maybe">Maybe
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-10 col-xs-offset-2">
+            <p>Would you still attend, if we can't accept your talk?</p>
+          </div>
+          <div class="col-xs-10 col-xs-offset-2">
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-attend" id="cfs-attend-yes" required="required" value="yes">Yeah, of course!!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-attend" id="cfs-attend-expensive" value="expensive">No, it's too expensive.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-attend" id="cfs-attend-distance" value="far">Too far :(
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-attend" id="cfs-attend-no" value="no">Nah
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cfs-attend" id="cfs-attend-maybe" value="maybe">Maybe
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <span class="help-block">We value having a safe, family-friendly, harassment-free environment, check our <a href="/code-of-conduct">code of conduct</a>.</span>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
