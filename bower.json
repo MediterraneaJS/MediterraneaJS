@@ -1,0 +1,29 @@
+{
+  "name": "MediterraneaJS",
+  "description": "MediterraneaJS by BarcelonaJS.",
+  "version": "0.3.0",
+  "homepage": "https://github.com/MediterraneaJS/MediterraneaJS",
+  "author": {
+    "name": "Patrick Heneise",
+    "url": "http://github.com/barcelona-js/"
+  },
+  "contributors": [
+    {
+      "name": "David Rodenas",
+      "url": "http://david-rodenas.com"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0",
+    "angular": "~1.2.27"
+  }
+}
