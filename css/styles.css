@@ -188,7 +188,7 @@ body {
   -webkit-tap-highlight-color: transparent; }
 
 a {
-  color: #fff;
+  color: #38ABC8;
   text-decoration: none; }
 
 ::selection {
@@ -502,5 +502,16 @@ blockquote {
 
 .text-center {
   text-align: center; }
+
+.dont-be-a-jerk {
+  padding: 15px;
+}
+.dont-be-a-jerk p {
+  margin: 15px;
+}
+
+footer {
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */
