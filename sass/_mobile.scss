@@ -1,0 +1,81 @@
+
+// Mobile styles
+@media (max-width: $mobile-sm) {
+header {
+    .logo {
+        width: 80%;
+        &-name {
+            margin-top: 0;
+        }
+    }
+    
+    $top_mobile-sm: 66px;
+    .header-fixed-background {
+        top: -$top_mobile-sm;
+        height: $top_mobile-sm;
+    }
+    &.fixed {
+        .logo {
+            width: 82%;            
+            &-name {
+                margin-top: -4px;
+            }
+        }
+    }
+    
+    nav {
+        left: -14px;
+        right: -14px;
+        width: 110%;
+        
+        ul {
+            margin-top: ($top_mobile-sm - 10);
+        }
+        
+        li a {
+            font-size: 30px;
+            padding: 4px 22px;
+        }
+        
+        .nav-toggle {
+            top: 12px;
+            right: 0;
+            
+            &.close {
+                top: 14px;
+            }
+        }
+    }
+}
+blockquote {
+    font-size: 13px;
+    padding: 0 24px;
+}
+.where {
+    margin-top: 10px;
+    background-position: center bottom;
+    
+    &-city {
+        font-size: 18px;
+    }
+    .btn-large {
+        padding: 18px 36px 14px;
+    }
+}
+.motivation {
+    padding: 0;
+    article {
+        width: 80%;
+        float: none;
+        padding: 0;
+        margin: 0 8%;
+        padding: 24px 0;
+        min-height: auto;
+        border: none;
+        border-bottom: 1px solid rgba(#fff,.16);
+        
+        &:last-child { border-bottom: none; }
+    }
+}
+
+}

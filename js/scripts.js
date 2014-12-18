@@ -3,16 +3,10 @@ $(function () {
     var logo = $('.logo');
 	
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 32) {
+		if ($(this).scrollTop() > 14) {
 			header.addClass('fixed');
 		} else {
 			header.removeClass('fixed');
-		}
-		
-		if ($(this).scrollTop() > 62) {
-		    logo.addClass('show');
-		} else if ($(this).scrollTop() == 0) {
-			logo.removeClass('show');
 		}
     });
     
@@ -44,6 +38,16 @@ $(function () {
     
     });
     
-    
-    
+    $('.nav-toggle').click(function(){
+        $(this).toggleClass('close');
+        $(this).next().toggleClass('open');
+        $('body').toggleClass('overlay-show');
+        
+        return false;
+    });
+    $('.overlay').click(function(){
+        $('.nav-toggle').removeClass('close');
+        $('.nav-toggle').next().toggleClass('open');
+        $('body').toggleClass('overlay-show');
+    });
 });
