@@ -31,3 +31,5 @@ dist
 dist/
 .sass-cache/
 .sass-cache
+views/speakers/
+views/speakers

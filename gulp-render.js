@@ -3,7 +3,6 @@ var
   through = require('through'),
   path = require('path'),
   es = require('event-stream'),
-  assets = require('./dist/mediterranea'),
   template_dir = path.resolve(__dirname, 'views'),
   gutil = require('gulp-util'),
   File = gutil.File,
@@ -74,6 +73,7 @@ var renderPartials = function renderPartials(partials, opt) {
 var render = function render(file, options, callback) {
   var
     p = {},
+    assets = require('./dist/mediterranea'),
     rendered,
     partials,
     compiled_layout,

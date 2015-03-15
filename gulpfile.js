@@ -4,6 +4,7 @@ var
   gulp = require('gulp'),
   sass = require('gulp-ruby-sass'),
   htmlmin = require('gulp-htmlmin'),
+  markdown = require('gulp-markdown'),
   connect = require('gulp-connect'),
   render = require('./gulp-render'),
   generate = require('./gulp-generate'),
@@ -43,7 +44,12 @@ gulp.task('minify_js', function () {
     .pipe(connect.reload());
 });
 
-// create a json file out of the speaker MDs
+gulp.task('generate-speaker-views', function () {
+  return gulp.src('./speakers/*.md')
+    .pipe(markdown())
+    .pipe(gulp.dest(path.join(paths.views, 'speakers')));
+});
+
 gulp.task('generate-speakers', function () {
   gulp.src('./speakers/*.md')
     .pipe(generate({
@@ -52,8 +58,8 @@ gulp.task('generate-speakers', function () {
 });
 
 // render each 'view' with partials and layout
-gulp.task('render-views', ['generate-speakers'], function () {
-  gulp.src(paths.views + '/*.html')
+gulp.task('render-views', ['merge-json'], function () {
+  gulp.src(paths.views + '/**/*.html')
     .pipe(render({
       layout: path.join(paths.layouts, 'main.html')
     }))
@@ -62,7 +68,7 @@ gulp.task('render-views', ['generate-speakers'], function () {
 });
 
 // merge JSON files
-gulp.task('merge-json', function () {
+gulp.task('merge-json', ['generate-speakers'], function () {
   gulp.src(paths.data + '/*.json')
     .pipe(jsoncombine('mediterranea.json', function (data) {
       return new Buffer(JSON.stringify(data));
@@ -107,6 +113,7 @@ gulp.task('watch', function () {
   gulp.watch(paths.js + '/**/*.js', ['minify_js']);
 });
 
-gulp.task('build', ['minify', 'minify_js', 'copy-media', 'sass'], function () {});
-
+gulp.task('prebuild', ['merge-json'], function () {});
+gulp.task('generate-views', ['generate-speaker-views'], function () {});
+gulp.task('build', ['merge-json', 'minify', 'minify_js', 'copy-media', 'sass'], function () {});
 gulp.task('default', ['minify_js', 'sass', 'media', 'serve', 'watch'], function () {});
