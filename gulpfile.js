@@ -11,6 +11,7 @@ var
   uglify = require('gulp-uglify'),
   path = require('path'),
   rev = require('gulp-rev'),
+  clean = require('gulp-clean'),
   jsoncombine = require('gulp-jsoncombine'),
   autoprefixer = require('gulp-autoprefixer');
 
@@ -50,6 +51,21 @@ gulp.task('generate-speaker-views', function () {
     .pipe(gulp.dest(path.join(paths.views, 'speakers')));
 });
 
+
+gulp.task('clean-dist', function () {
+  return gulp.src(paths.dist + '/**/*', {
+      read: false
+    })
+    .pipe(clean());
+});
+
+gulp.task('clean-speakers', function () {
+  return gulp.src(paths.data + '/speakers.json', {
+      read: false
+    })
+    .pipe(clean());
+});
+
 gulp.task('generate-speakers', function () {
   gulp.src('./speakers/*.md')
     .pipe(generate({
@@ -58,7 +74,7 @@ gulp.task('generate-speakers', function () {
 });
 
 // render each 'view' with partials and layout
-gulp.task('render-views', ['merge-json'], function () {
+gulp.task('render-views', function () {
   gulp.src(paths.views + '/**/*.html')
     .pipe(render({
       layout: path.join(paths.layouts, 'main.html')
@@ -109,11 +125,13 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch(paths.sass + '/**/*.scss', ['sass']);
   gulp.watch(paths.media + '/**/*.*', ['copy-media']);
+  gulp.watch(paths.layouts + '/*.html', ['render-views']);
   gulp.watch(paths.views + '/**/*.html', ['render-views']);
   gulp.watch(paths.js + '/**/*.js', ['minify_js']);
 });
 
+gulp.task('clean', ['clean-speakers', 'clean-dist'], function () {});
 gulp.task('prebuild', ['merge-json'], function () {});
 gulp.task('generate-views', ['generate-speaker-views'], function () {});
-gulp.task('build', ['merge-json', 'minify', 'minify_js', 'copy-media', 'sass'], function () {});
-gulp.task('default', ['minify_js', 'sass', 'media', 'serve', 'watch'], function () {});
+gulp.task('build', ['minify', 'minify_js', 'copy-media', 'sass'], function () {});
+gulp.task('default', ['build', 'serve', 'watch'], function () {});

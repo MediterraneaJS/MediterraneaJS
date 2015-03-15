@@ -1,3 +1,53 @@
-body {
-  background-color: white;
+@import "variables";
+
+.center {
+  text-align: center;
+}
+
+.nav-logo span {
+  display: none;
+}
+
+.pure-menu-list {
+  height: 80px;
+  line-height: 80px;
+  vertical-align: top;
+}
+
+.pure-menu-item a {
+  color: $blue;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 12px;
+  padding-top: 1px;
+}
+
+.pure-menu-item a:hover {
+  border-bottom: 10px solid $lightblue;
+}
+
+.nav-logo {
+  display: inline-block;
+  width: 250px;
+  height: 80px;
+  background: url(/media/mediterraneajs.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin-right: 50px;
+}
+
+
+#intro {
+  .header {
+    height: 420px;
+    padding: 70px;
+    margin-left: 50%;
+    background-color: rgba(26,125,154,0.5);
+  }
+}
+
+
+#sponsors-banner a {
+  line-height: 50px;
+  color: black;
 }

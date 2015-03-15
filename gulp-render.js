@@ -73,7 +73,7 @@ var renderPartials = function renderPartials(partials, opt) {
 var render = function render(file, options, callback) {
   var
     p = {},
-    assets = require('./dist/mediterranea'),
+    assets = require('./dist/mediterranea.json'),
     rendered,
     partials,
     compiled_layout,

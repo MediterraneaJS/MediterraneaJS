@@ -1,10 +1,26 @@
 [
   {
     "name": "David Dias",
-    "twitter": "daviddias"
+    "twitter": "daviddias",
+    "tagline": "MSc of Awesome",
+    "id": "david_dias"
   },
   {
     "name": "Garann Means",
-    "twitter": "garannm"
+    "twitter": "garannm",
+    "tagline": "MSc of Awesome",
+    "id": "garann_means"
+  },
+  {
+    "name": "David Dias",
+    "twitter": "daviddias",
+    "tagline": "MSc of Awesome",
+    "id": "david_dias"
+  },
+  {
+    "name": "Garann Means",
+    "twitter": "garannm",
+    "tagline": "MSc of Awesome",
+    "id": "garann_means"
   }
 ]

@@ -26,15 +26,17 @@ var gulpGenerate = function gulpGenerate(options) {
 
     fs.exists(output, function (exists) {
       if (!exists) {
-        var json = {};
-        json[fileName] = template.meta;
+        var json = [];
+        template.meta.id = fileName;
+        json.push(template.meta);
         fs.writeFile(output, JSON.stringify(json, null, 2), function (error) {
           return;
         });
       } else {
         fs.readFile(output, function (error, file) {
-          var json = JSON.parse(file);
-          json[fileName] = template.meta;
+          var json = JSON.parse(file.toString());
+          template.meta.id = fileName;
+          json.push(template.meta);
           fs.writeFile(output, JSON.stringify(json, null, 2), function (error) {
             return;
           });
