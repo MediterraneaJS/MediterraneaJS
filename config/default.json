@@ -1,0 +1,9 @@
+{
+  "sass": "./assets/sass",
+  "media": "./assets/media",
+  "js": "./assets/js",
+  "data": "./data",
+  "views": "./views",
+  "layouts": "./layouts",
+  "dist": "./dist"
+}

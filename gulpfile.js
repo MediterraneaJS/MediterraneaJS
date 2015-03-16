@@ -1,10 +1,11 @@
 'use strict';
 
-var gulp     = require('gulp'),
-    path     = require('path'),
-    // Custom plugins
-    render   = require('./gulp-render'),
-    generate = require('./gulp-generate');
+var
+  gulp = require('gulp'),
+  path = require('path'),
+  // Custom plugins
+  render = require('./gulp-render'),
+  generate = require('./gulp-generate');
 
 var plugin = require('gulp-load-plugins')();
 var paths = require('config');

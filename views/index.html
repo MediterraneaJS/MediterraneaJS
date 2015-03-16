@@ -29,33 +29,105 @@
 </section>
 
 <section id="speakers" class="pure-g">
-  <div class="pure-u-1 center">
+  <header class="pure-u-1 center">
     <h2>Speakers</h2>
-  </div>
+  </header>
   <div class="pure-u-1">
+    <div class="pure-u-4-24"></div>
     {{#speakers}}
-      <div class="pure-u-4-24">
-      {{> speaker_preview}}
-      </div>
+    <div class="pure-u-2-24">
+      {{> person-preview}}
+    </div>
     {{/speakers}}
+    <div class="pure-u-2-24"></div>
   </div>
 </section>
 
 <section id="event" class="pure-g">
-  <article class="pure-u-1-2">
+  <div class="pure-u-4-24"></div>
+  <article id="about" class="content pure-u-8-24">
     <h2>About the Event</h2>
-    <p>YEAH</p>
+    <p>MediterráneaJS is a 2-day not-for-profit by-the-community for-the-community international conference about JavaScript. It is organised by BarcelonaJS.</p>
+    <p>With MediterráneaJS we want to inspire, much like the city of Barcelona. That's why the event is not happening in some boring, flat and simple conference center somewhere out of the city, but in one of the most 'fashionista' neighborhoods: 'El Born', the very center of Barcelona. We want to you explore, get lost, refresh and find yourself, in the talks as much as in Barcelona. To take home more than just a little bit more JavaScript.</p>
   </article>
-  <article class="pure-u-1-2">
-    lalala
+  <article id="sunjs" class="pure-u-8-24">
+    <img src="/media/square.png" alt="SunJS" />
   </article>
 </section>
 
 
-<section id="venue"></section>
-<section id="schedule"></section>
-<section id="sponsors"></section>
-<section id="supporters"></section>
+<section id="venue" class="pure-g">
+  <div class="pure-u-4-24"></div>
+  <article class="content pure-u-8-24">
+    <header>
+      <h2>Venue</h2>
+    </header>
+    <div itemscope itemtype="http://schema.org/Place">
+      <h1>
+        <span itemprop="name">El Born CC</span>
+      </h1>
+      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">Plaça Comercial, 12</span>
+        <span itemprop="postalCode">08003</span>,
+        <span itemprop="addressLocality">Barcelona</span>,
+        <span itemprop="addressRegion">Catalunya</span>
+        <span itemprop="addressCountry">ES</span>
+      </div>
+    </div>
+  </article>
+  <article class="pure-u-8-24">
+    <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/bcnjs.lfmk3ao6/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiYmNuanMiLCJhIjoiOXhHUE55ayJ9.92MNNb9uO74n88PcoaPQCA'></iframe>
+  </article>
+</section>
+
+
+<section id="schedule" class="pure-g center">
+  <header class="pure-u-1">
+    <h2>Schedule</h2>
+  </header>
+  <article class="pure-u-1-4">
+
+  </article>
+  <article class="pure-u-1-4">
+    <h3>Monday</h3>
+    June 22
+  </article>
+  <article class="pure-u-1-4">
+    <h3>Tuesday</h3>
+    June 23
+  </article>
+  <article class="pure-u-1-4">
+
+  </article>
+</section>
+
+
+<section id="sponsors" class="pure-g center">
+  <header class="pure-u-1">
+    <h2>Sponsors</h2>
+  </header>
+  <div class="pure-u-4-24"></div>
+  <a class="pure-u-4-24" href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">[your logo here]</a>
+  <a class="pure-u-4-24" href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">[your logo here]</a>
+  <a class="pure-u-4-24" href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">[your logo here]</a>
+  <a class="pure-u-4-24" href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">[your logo here]</a>
+  <div class="pure-u-4-24"></div>
+</section>
+
+
+<section id="partners" class="pure-g center">
+  <header class="pure-u-1">
+    <h2>Partners</h2>
+  </header>
+  <div class="pure-u-4-24"></div>
+  <a class="pure-u-4-24" href="http://www.itnig.net" id="partners-itnig">
+    <span>itnig</span>
+  </a>
+  <a class="pure-u-4-24" href="http://mediterranea.apidays.io" id="partners-apidays">
+    <span>APIDAYS MEDITERRANEA</span>
+  </a>
+  <div class="pure-u-4-24"></div>
+</section>
 
 <footer>
   &copy; 2015 MediterráneaJS.

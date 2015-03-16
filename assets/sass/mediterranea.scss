@@ -46,8 +46,48 @@
   }
 }
 
+section {
+  .content {
+    padding: 55px;
+  }
+}
+
+#event {
+  #about {
+    background-color: $lightblue;
+  }
+}
+
+#venue {
+  padding: 55px;
+  background: url(/media/borncc_outside.jpg) no-repeat;
+  background-size: cover;
+}
+
 
 #sponsors-banner a {
   line-height: 50px;
   color: black;
+}
+
+#partners {
+  a {
+    height: 160px;
+    display: block;
+    background-size: 160px 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    span {
+      display: none;
+    }
+  }
+
+  #partners-itnig {
+    background-image: url(/media/partners/itnig.jpg);
+  }
+
+  #partners-apidays {
+    background-image: url(/media/partners/apidays.jpg);
+  }
 }
