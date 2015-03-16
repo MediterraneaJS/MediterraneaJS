@@ -18,7 +18,7 @@ gulp.task('serve', function () {
 });
 
 gulp.task('minify_js', function () {
-  gulp.src(paths.js + '/mediterranea.js')
+  return gulp.src(paths.js + '/mediterranea.js')
     .pipe(plugin.uglify({
       output: {
         beautify: false
@@ -51,7 +51,7 @@ gulp.task('clean-speakers', function () {
 });
 
 gulp.task('generate-speakers', function () {
-  gulp.src('./speakers/*.md')
+  return gulp.src('./speakers/*.md')
     .pipe(generate({
       output: 'speakers'
     }));
@@ -59,7 +59,7 @@ gulp.task('generate-speakers', function () {
 
 // render each 'view' with partials and layout
 gulp.task('render-views', function () {
-  gulp.src(paths.views + '/**/*.html')
+  return gulp.src(paths.views + '/**/*.html')
     .pipe(render({
       layout: path.join(paths.layouts, 'main.html')
     }))
@@ -69,7 +69,7 @@ gulp.task('render-views', function () {
 
 // merge JSON files
 gulp.task('merge-json', ['generate-speakers'], function () {
-  gulp.src(paths.data + '/*.json')
+  return gulp.src(paths.data + '/*.json')
     .pipe(plugin.jsoncombine('mediterranea.json', function (data) {
       return new Buffer(JSON.stringify(data));
     }))
@@ -77,7 +77,7 @@ gulp.task('merge-json', ['generate-speakers'], function () {
 });
 
 gulp.task('copy-media', function () {
-  gulp.src([
+  return gulp.src([
     paths.media + '/**/*.jpg',
     paths.media + '/**/*.mp4',
     paths.media + '/**/*.png'
@@ -86,7 +86,7 @@ gulp.task('copy-media', function () {
 });
 
 gulp.task('minify', ['render-views'], function () {
-  gulp.src('dist/*.html')
+  return gulp.src('dist/*.html')
     .pipe(plugin.htmlmin({
       collapseWhitespace: true
     }))
