@@ -15,15 +15,7 @@ var
   jsoncombine = require('gulp-jsoncombine'),
   autoprefixer = require('gulp-autoprefixer');
 
-var paths = {
-  sass: './assets/sass',
-  media: './assets/media',
-  js: './assets/js',
-  data: './data',
-  views: './views',
-  layouts: './layouts',
-  dist: './dist'
-};
+var paths = require('config');
 
 gulp.task('serve', function () {
   connect.server({

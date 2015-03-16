@@ -9,6 +9,7 @@
   "repository": "https://github.com/MediterraneaJS/MediterraneaJS",
   "dependencies": {},
   "devDependencies": {
+    "config": "^1.12.0",
     "event-stream": "^3.3.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
@@ -27,6 +28,7 @@
     "gulp-util": "^3.0.4",
     "hogan": "^1.0.2",
     "hogan.js": "^3.0.2",
+    "js-yaml": "^3.2.7",
     "meta-marked": "^0.3.3",
     "npm": "^2.7.1",
     "through": "^2.3.6"
