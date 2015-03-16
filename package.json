@@ -20,6 +20,7 @@
     "gulp-htmlmin": "^1.1.1",
     "gulp-jsoncombine": "^1.0.2",
     "gulp-livereload": "^3.8.0",
+    "gulp-load-plugins": "^0.8.1",
     "gulp-markdown": "git://github.com/PatrickHeneise/gulp-markdown.git",
     "gulp-rename": "^1.2.0",
     "gulp-rev": "^3.0.1",
