@@ -1,4 +1,13 @@
 @import "variables";
+@import "fonts";
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
 
 .center {
   text-align: center;
@@ -22,10 +31,6 @@
   padding-top: 1px;
 }
 
-.pure-menu-item a:hover {
-  border-bottom: 10px solid $lightblue;
-}
-
 .nav-logo {
   display: inline-block;
   width: 250px;
@@ -36,41 +41,148 @@
   margin-right: 50px;
 }
 
-
-#intro {
-  .header {
-    height: 420px;
-    padding: 70px;
-    margin-left: 50%;
-    background-color: rgba(26,125,154,0.5);
-  }
-}
-
 section {
+  h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 120px;
+  }
+
+  h2 span {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+
   .content {
     padding: 55px;
   }
 }
 
+.dark {
+  color: white;
+
+  h2 {
+    color: white;
+  }
+
+  h2 span {
+    border-bottom: 3px solid white;
+  }
+}
+
+.bright {
+  color: $darkblue;
+
+  h2 {
+    color: $darkblue;
+  }
+
+  h2 span {
+    border-bottom: 3px solid black;
+  }
+}
+
+#intro {
+  color: white;
+
+  background: url(/media/beach.jpg) no-repeat center;
+  .header {
+    height: 420px;
+    padding: 70px;
+    margin-left: 50%;
+
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+#speakers {
+  background: #374548;
+
+  .person {
+    width: 150px;
+  }
+
+  .portrait {
+    width: 150px;
+    height: 150px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    -webkit-filter: grayscale(1);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'gs\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#gs");
+    filter: gray;
+  }
+
+  .triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 58px 30px;
+    border-color: transparent transparent $lightblue_opaque transparent;
+    position: relative;
+    top: -62px;
+    right: -120px;
+    z-index: 99999;
+  }
+
+  .meta {
+    h3 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 5px;
+      font-style: italic;
+    }
+  }
+}
+
 #event {
+  background: url(/media/background_triangle/triange_blue.svg);
+  background-size: cover;
+
   #about {
-    background-color: $lightblue;
+    background-color: white;
   }
 }
 
 #venue {
-  padding: 55px;
-  background: url(/media/borncc_outside.jpg) no-repeat;
+  padding: 0px;
+  background: url(/media/borncc.jpg) no-repeat;
   background-size: cover;
 }
 
+#schedule {
+  article {
+    background: url(/media/background_triangle/triangulos_darkgray.svg);
+    background-size: 2000px;
+  }
+
+  .schedule-monday {
+    color: white;
+    background: $darkblue;
+    min-height: 385px;
+  }
+
+  .schedule-tuesday {
+    color: white;
+    background: $lightblue;
+    min-height: 385px;
+  }
+}
 
 #sponsors-banner a {
   line-height: 50px;
   color: black;
 }
 
+
 #partners {
+  background-color: $gray;
   a {
     height: 160px;
     display: block;
@@ -87,7 +199,18 @@ section {
     background-image: url(/media/partners/itnig.jpg);
   }
 
+  #partners-barcinno {
+    background-image: url(/media/partners/barcinno.jpg);
+  }
+
   #partners-apidays {
     background-image: url(/media/partners/apidays.jpg);
   }
+}
+
+footer {
+  color: white;
+  font-size: 12px;
+  background-color: $darkblue;
+  min-height: 200px;
 }

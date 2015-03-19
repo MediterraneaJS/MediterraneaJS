@@ -79,9 +79,7 @@ gulp.task('merge-json', ['generate-speakers'], function () {
 
 gulp.task('copy-media', function () {
   return gulp.src([
-    paths.media + '/**/*.jpg',
-    paths.media + '/**/*.mp4',
-    paths.media + '/**/*.png'
+    paths.media + '/**/*.*'
   ])
     .pipe(gulp.dest('dist/media'));
 });
