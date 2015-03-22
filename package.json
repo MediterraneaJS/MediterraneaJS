@@ -17,6 +17,7 @@
     "gulp-connect": "^2.2.0",
     "gulp-extname": "^0.2.0",
     "gulp-file-include": "^0.8.0",
+    "gulp-gh-pages": "^0.5.0",
     "gulp-htmlmin": "^1.1.1",
     "gulp-jsoncombine": "^1.0.2",
     "gulp-livereload": "^3.8.0",
