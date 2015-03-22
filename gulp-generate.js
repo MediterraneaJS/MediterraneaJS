@@ -9,7 +9,7 @@ var templateName = function templateName(file) {
     path.dirname(file.relative),
     path.basename(file.relative, path.extname(file.relative))
   );
-}
+};
 
 var gulpGenerate = function gulpGenerate(options) {
   var partials = {};
@@ -24,23 +24,31 @@ var gulpGenerate = function gulpGenerate(options) {
       output = path.join(__dirname, 'data', options.output) + '.json',
       fileName = templateName(file);
 
+    console.log(template.meta);
+
     fs.exists(output, function (exists) {
+      var json = [];
+
       if (!exists) {
-        var json = [];
+        json = [];
         template.meta.id = fileName;
         json.push(template.meta);
         fs.writeFile(output, JSON.stringify(json, null, 2), function (error) {
           return;
         });
       } else {
-        fs.readFile(output, function (error, file) {
-          var json = JSON.parse(file.toString());
+        var
+          file = fs.readFileSync(output);
+
+        if (file.length > 0) {
+          json = JSON.parse(file.toString());
           template.meta.id = fileName;
           json.push(template.meta);
-          fs.writeFile(output, JSON.stringify(json, null, 2), function (error) {
-            return;
-          });
-        });
+          fs.writeFileSync(output, JSON.stringify(json, null, 2));
+          return;
+        } else {
+          return;
+        }
       }
     });
   };
