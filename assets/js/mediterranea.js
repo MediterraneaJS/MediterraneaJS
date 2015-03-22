@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
     spy = new ScrollSpy(),
     nav = document.getElementsByClassName('pure-menu-link');
 
+  document.getElementById('toggle').addEventListener('click', function (e) {
+    document.getElementById('tuckedMenu').classList.toggle('mediterranean-menu-tucked');
+    document.getElementById('toggle').classList.toggle('x');
+  });
+
   spy.init();
   spy.spyOn(document.getElementById('speakers'));
   spy.spyOn(document.getElementById('schedule'));

@@ -13,7 +13,6 @@ var paths = require('config');
 gulp.task('serve', function () {
   plugin.connect.server({
     root: 'dist',
-    host: '0.0.0.0',
     port: 8888,
     livereload: true
   });

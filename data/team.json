@@ -1,4 +1,14 @@
 [{
-  "name": "Patrick Heneise",
-  "twitter": "PatrickHeneise"
+    "id": "jean_carlos_meninno",
+    "name": "Jean Carlos Meninno",
+    "twitter": "eth0lo"
+},
+  {
+    "id": "isabel_cabezas",
+    "name": "Isabel Cabezas",
+    "twitter": "isabelcabezasm"
+}, {
+    "id": "patrick_heneise",
+    "name": "Patrick Heneise",
+    "twitter": "PatrickHeneise"
 }]
