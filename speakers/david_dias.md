@@ -5,9 +5,11 @@ tagline: One from many
 
 ---
 
-# "What should I write here???"
+# David Dias
 
-Hi!, I’m David, I work at &yet(http://andyet.com/), which makes me a yeti by definition (Q.E.D). I spend my days working with incredible people whom I follow and which I’m lucky to be able to call friends. 
+## "What should I write here???"
+
+Hi!, I’m David, I work at &yet(http://andyet.com/), which makes me a yeti by definition (Q.E.D). I spend my days working with incredible people whom I follow and which I’m lucky to be able to call friends.
 
 I've been curating [LXJS, the Lisbon Javascript Conference](http://lxjs.org), with the help of some extraordinary humans, empowering, encouraging and building the community that I want to be a part of, a topic, or more like a search, that I'm very found of.
 

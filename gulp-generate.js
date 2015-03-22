@@ -24,8 +24,6 @@ var gulpGenerate = function gulpGenerate(options) {
       output = path.join(__dirname, 'data', options.output) + '.json',
       fileName = templateName(file);
 
-    console.log(template.meta);
-
     fs.exists(output, function (exists) {
       var json = [];
 

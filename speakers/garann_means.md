@@ -1,10 +1,8 @@
 ---
 name: Garann Means
 twitter: garannm
-tagline: MSc of Awesome
+tagline: Escapologist
 
 ---
 
-#Garann
-
-pure awesomeness
+# Garann Means

@@ -13,6 +13,7 @@ var paths = require('config');
 gulp.task('serve', function () {
   plugin.connect.server({
     root: 'dist',
+    host: '0.0.0.0',
     port: 8888,
     livereload: true
   });
@@ -33,7 +34,7 @@ gulp.task('minify_js', function () {
 gulp.task('generate-speaker-views', function () {
   return gulp.src('./speakers/*.md')
     .pipe(plugin.markdown())
-    .pipe(gulp.dest(path.join(paths.views, 'speakers')));
+    .pipe(gulp.dest(path.join(paths.views, 'people')));
 });
 
 
@@ -60,11 +61,20 @@ gulp.task('generate-speakers', function () {
 
 // render each 'view' with partials and layout
 gulp.task('render-views', function () {
-  return gulp.src(paths.views + '/**/*.html')
+  return gulp.src(paths.views + '/*.html')
     .pipe(render({
       layout: path.join(paths.layouts, 'main.html')
     }))
     .pipe(gulp.dest(paths.dist))
+    .pipe(plugin.connect.reload());
+});
+
+gulp.task('render-speakers', function () {
+  return gulp.src(paths.views + '/people/*.html')
+    .pipe(render({
+      layout: path.join(paths.layouts, 'empty.html')
+    }))
+    .pipe(gulp.dest(path.join(paths.dist, 'people')))
     .pipe(plugin.connect.reload());
 });
 
@@ -84,8 +94,8 @@ gulp.task('copy-media', function () {
     .pipe(gulp.dest('dist/media'));
 });
 
-gulp.task('minify', ['render-views'], function () {
-  return gulp.src('dist/*.html')
+gulp.task('minify', ['render-views', 'render-speakers'], function () {
+  return gulp.src('dist/**/*.html')
     .pipe(plugin.htmlmin({
       collapseWhitespace: true
     }))
@@ -108,8 +118,8 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch(paths.sass + '/**/*.scss', ['sass']);
   gulp.watch(paths.media + '/**/*.*', ['copy-media']);
-  gulp.watch(paths.layouts + '/*.html', ['render-views']);
-  gulp.watch(paths.views + '/**/*.html', ['render-views']);
+  gulp.watch(paths.layouts + '/*.html', ['render-views', 'render-speakers']);
+  gulp.watch(paths.views + '/**/*.html', ['render-views', 'render-speakers']);
   gulp.watch(paths.js + '/**/*.js', ['minify_js']);
 });
 

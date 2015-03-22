@@ -1,26 +1,86 @@
 [
   {
+    "name": "Alvaro Lopez",
+    "twitter": "alobbs",
+    "tagline": null,
+    "id": "alvaro_lopez"
+  },
+  {
+    "name": "Belen Albeza",
+    "twitter": "ladybenko",
+    "tagline": "Computer engineer & game developer",
+    "id": "belen_albeza"
+  },
+  {
+    "name": "Daniela Borges",
+    "twitter": "Sericaia",
+    "tagline": null,
+    "id": "daniela_borges"
+  },
+  {
     "name": "David Dias",
     "twitter": "daviddias",
-    "tagline": "MSc of Awesome",
+    "tagline": "One from many",
     "id": "david_dias"
+  },
+  {
+    "name": "Dheerja Kaur",
+    "twitter": "dheerja",
+    "tagline": "Product @ ESPN",
+    "id": "dheerja_kaur"
   },
   {
     "name": "Garann Means",
     "twitter": "garannm",
-    "tagline": "MSc of Awesome",
+    "tagline": "Escapologist",
     "id": "garann_means"
   },
   {
-    "name": "David Dias",
-    "twitter": "daviddias",
-    "tagline": "MSc of Awesome",
-    "id": "david_dias"
+    "name": "Ingvar Stepanyan",
+    "twitter": "RReverser",
+    "tagline": null,
+    "id": "ingvar_stepanyan"
   },
   {
-    "name": "Garann Means",
-    "twitter": "garannm",
-    "tagline": "MSc of Awesome",
-    "id": "garann_means"
+    "name": "Javier Arias",
+    "twitter": "javier_arilos",
+    "tagline": null,
+    "id": "javier_arias"
+  },
+  {
+    "name": "Kris Kowal",
+    "twitter": "kriskowal",
+    "tagline": "Open Sourcerer",
+    "id": "kris_kowal"
+  },
+  {
+    "name": "Luke Bond",
+    "twitter": "lukeb0nd",
+    "tagline": null,
+    "id": "luke_bond"
+  },
+  {
+    "name": "Maciej Małecki",
+    "twitter": "maciejmalecki",
+    "tagline": "I find things funny. @npmjs @spacedock_io.",
+    "id": "maciej_malecki"
+  },
+  {
+    "name": "Paul Bakaus",
+    "twitter": "pbakaus",
+    "tagline": null,
+    "id": "paul_bakaus"
+  },
+  {
+    "name": "Richard Rodger",
+    "twitter": "rjrodger",
+    "tagline": "CTO/Founder at nearform.com",
+    "id": "richard_rodger"
+  },
+  {
+    "name": "Vitaly Friedman",
+    "twitter": "smashingmag",
+    "tagline": "Co-founder and editor-in-chief of Smashing Magazine",
+    "id": "vitaly_friedman"
   }
 ]
