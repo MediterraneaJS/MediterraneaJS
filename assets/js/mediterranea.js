@@ -1,5 +1,5 @@
 function hasClass(ele, cls) {
-  return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+  return ele.className.indexOf(cls) !== -1 ? true : false;
 }
 
 function addClass(ele, cls) {
@@ -10,8 +10,7 @@ function addClass(ele, cls) {
 
 function removeClass(ele, cls) {
   if (hasClass(ele, cls)) {
-    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-    ele.className = ele.className.replace(reg, ' ');
+    ele.className = ele.className.replace(cls, '');
   }
 }
 
@@ -29,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       i = nav.length,
       found = false;
 
+    console.log('in:' + event.data.id);
     while (i >= 0 || !found) {
       if (nav[i] && nav[i].hash && nav[i].hash.substr(1) === event.data.id) {
         addClass(nav[i], 'active');
@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
       i = nav.length,
       found = false;
 
+    console.log('out: ' + event.data.id);
     while (i >= 0 || !found) {
-      console.log(nav[i]);
       if (nav[i] && nav[i].hash && nav[i].hash.substr(1) === event.data.id) {
         removeClass(nav[i], 'active');
         found = true;
