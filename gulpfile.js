@@ -20,7 +20,7 @@ gulp.task('serve', function () {
 });
 
 gulp.task('minify_js', function () {
-  return gulp.src(paths.js + '/mediterranea.js')
+  return gulp.src(paths.js + '/*.js')
     .pipe(plugin.uglify({
       output: {
         beautify: false
@@ -72,7 +72,7 @@ gulp.task('render-views', function () {
 gulp.task('render-speakers', function () {
   return gulp.src(paths.views + '/people/*.html')
     .pipe(render({
-      layout: path.join(paths.layouts, 'empty.html')
+      layout: path.join(paths.layouts, 'main.html')
     }))
     .pipe(gulp.dest(path.join(paths.dist, 'people')))
     .pipe(plugin.connect.reload());

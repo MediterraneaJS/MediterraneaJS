@@ -11,6 +11,23 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin-top: 80px;
+}
+
+body div h1 {
+  margin: 25px;
+}
+body div p {
+  margin: 25px;
+}
+
+hr {
+  border: 2px solid white;
+  width: 150px;
+  margin-left: 0;
+}
+
 .center {
   text-align: center;
 }
@@ -29,6 +46,14 @@ a {
   font-size: 12px;
   padding-top: 1px;
 }
+.pure-menu-item a:hover, .pure-menu-item a.active {
+  height: 60px;
+  line-height: 80px;
+  padding-bottom: 0;
+  background-color: white;
+  border-bottom: 9px solid $lightblue;
+}
+
 .nav-logo {
   display: inline-block;
   width: 250px;
@@ -37,6 +62,13 @@ a {
   background-size: 100%;
   background-position: center;
   margin-right: 50px;
+}
+
+#header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
 }
 
 .content {
@@ -98,6 +130,7 @@ section {
   .address {
     a, span {
       font-family: 'Merriweather', serif;
+      font-style: italic;
     }
     div {
       display: inline;
@@ -172,9 +205,12 @@ section {
   }
 }
 #venue {
-  padding: 0;
   background: url("/media/borncc.jpg") no-repeat;
   background-size: cover;
+
+  .content {
+    background: rgba(0,0,0,0.5);
+  }
 }
 #schedule {
   article {
