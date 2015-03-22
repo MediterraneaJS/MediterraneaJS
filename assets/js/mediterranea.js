@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
   spy.init();
   spy.spyOn(document.getElementById('speakers'));
   spy.spyOn(document.getElementById('schedule'));
+  spy.spyOn(document.getElementById('event'));
+  spy.spyOn(document.getElementById('venue'));
+  spy.spyOn(document.getElementById('sponsors'));
 
   document.addEventListener('ScrollSpyBackInSight', function (event) {
     var
