@@ -102,7 +102,7 @@ gulp.task('minify', ['render-views', 'render-speakers'], function () {
 });
 
 gulp.task('sass', function () {
-  return plugin.rubySass(paths.sass, {
+  return plugin.rubySass(paths.sass+"/mediterranea.scss", {
       sourcemap: false
     })
     .on('error', function (err) {
