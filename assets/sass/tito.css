@@ -1,0 +1,105 @@
+body {
+  background: #fff;
+}
+a {
+  color: #36aac8;
+  /*text-decoration: underline;*/
+}
+a:hover {
+  color: #fe006b;
+  text-decoration: none;
+}
+.list-group-item,
+.btn.btn-primary.tc-remind,
+.btn.btn-primary.tc-btn-edit {
+  /*text-decoration: none;*/
+}
+.list-group-item:hover {
+  /*color: #555;*/
+}
+.event-admin-link {
+  color: #eee;
+  opacity: .5;
+}
+.event-admin-link:hover {
+  color: #eee;
+  opacity: 1;
+}
+.overview-detail a {
+  color: #333;
+}
+#show-discount-code a {
+  color: #555;
+  text-decoration: none;
+}
+.tito-submit,
+.btn-primary {
+  background: #36aac8;
+  border-color: #36aac8;
+}
+.tc-remind {
+  background: #36aac8;
+  border-color: #36aac8;
+}
+.tc-header.ticket-title {
+  background: #36aac8;
+}
+.tito-submit:hover,
+.tito-submit:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #36aac8;
+  border-color: #36aac8;
+}
+.main-flow .progress-bar.step1,
+.main-flow .progress-bar.step2,
+.main-flow .progress-bar.step3 {
+  background: #36aac8;
+}
+.bs-callout-help {
+  border-color: #36aac8;
+  background: #e4e4e4;
+}
+.tc-header {
+  border: none;
+}
+.main-card.ticket-card,
+.main-card.ticket-settings-card {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background: #e10079;
+  border-color: #e10079;
+}
+.main-footer a,
+.main-footer a:link,
+.main-footer a:visited {
+  color: #eee;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-footer a img {
+  display: none;
+}
+.event-title, .event-meta, .event-description {
+  text-align: center !important;
+}
+.additional-info-description {
+  background-color: rgba(55, 172, 201, 0.4);
+  padding: 15px;
+}
