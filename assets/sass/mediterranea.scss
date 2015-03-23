@@ -214,12 +214,18 @@ section {
     }
   }
   .buy-tickets {
-    margin-top: 50px;
+    font-family: 'Montserrat', serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 125%;
     border: 1px solid white;
     padding: 15px;
     background: rgba(0,0,0,0);
     text-transform: uppercase;
+  }
+  .buy-tickets:hover {
+    background: white;
+    color: $lightblue;
   }
 }
 #speakers {
@@ -245,7 +251,6 @@ section {
     color: $lightblue;
   }
   .portrait {
-    width: 200px;
     height: 150px;
   }
   img {
@@ -281,9 +286,8 @@ section {
   background: url("/media/background_triangle/triange_blue.svg");
   background-size: cover;
   #about {
-    margin: 4.1667%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 150px;
     background: white url("/media/square.png") no-repeat;
     background-position: 50% 10px;
@@ -473,9 +477,11 @@ footer {
 
 @media screen and (min-width:48em) {
   #intro {
+    text-align: left;
     background: url("/media/beach.jpg") repeat-x center;
     .header {
       margin-left: 50%;
+      padding-left: 25px;
     }
   }
   .speakers {
@@ -483,7 +489,10 @@ footer {
   }
 
   #event {
-    padding-left: 4.1667%;
+    padding-left: 8.3334%;
+    .content {
+      padding: 35px;
+    }
   }
 
   footer {
@@ -514,14 +523,15 @@ footer {
     padding-left: 16.6667%;
   }
   #event {
-    padding-left: 16.6667%;
+    padding-left: 0;
 
     #about {
       background: white;
       padding: 0;
       margin: 0;
+      margin-left: 25%;
 
-      p {
+      h2, p {
         margin: 15px;
       }
     }
@@ -530,8 +540,9 @@ footer {
     }
   }
   #venue {
-    padding-left: 16.6667%;
+    padding-left: 0;
     .content {
+      margin-left: 25%;
       padding: 0;
       h2, h3, div {
         margin: 15px;
@@ -544,12 +555,26 @@ footer {
 }
 
 @media screen and (min-width:80em) {
-  #into {
-    min-height: 700px;
+  #intro {
+    min-height: 600px;
+  }
+  #venue {
+    .content {
+      margin-left: 25%;
+
+      h2, p {
+        padding: 25px;
+      }
+    }
   }
   #event {
     #about {
-      text-align: left
+      margin-left: 25%;
+      text-align: left;
+
+      h2, p {
+        padding: 25px;
+      }
     }
     #sunjs {
       background-size: auto;
