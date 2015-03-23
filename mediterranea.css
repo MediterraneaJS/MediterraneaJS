@@ -186,12 +186,17 @@ section h2 span {
   #intro .address div {
     display: inline; }
   #intro .buy-tickets {
-    margin-top: 50px;
+    font-family: 'Montserrat', serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 125%;
     border: 1px solid white;
     padding: 15px;
     background: transparent;
     text-transform: uppercase; }
+  #intro .buy-tickets:hover {
+    background: white;
+    color: #38ABC8; }
 
 #speakers {
   background: #374548;
@@ -212,7 +217,6 @@ section h2 span {
     text-decoration: none;
     color: #38ABC8; }
   #speakers .portrait {
-    width: 200px;
     height: 150px; }
   #speakers img {
     width: 150px;
@@ -242,9 +246,8 @@ section h2 span {
   background: url("/media/background_triangle/triange_blue.svg");
   background-size: cover; }
   #event #about {
-    margin: 4.1667%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 150px;
     background: white url("/media/square.png") no-repeat;
     background-position: 50% 10px;
@@ -392,15 +395,19 @@ footer {
 
 @media screen and (min-width: 48em) {
   #intro {
+    text-align: left;
     background: url("/media/beach.jpg") repeat-x center; }
     #intro .header {
-      margin-left: 50%; }
+      margin-left: 50%;
+      padding-left: 25px; }
 
   .speakers {
     padding-left: 8.3334%; }
 
   #event {
-    padding-left: 4.1667%; }
+    padding-left: 8.3334%; }
+    #event .content {
+      padding: 35px; }
 
   footer {
     padding: 0; }
@@ -425,28 +432,40 @@ footer {
     padding-left: 16.6667%; }
 
   #event {
-    padding-left: 16.6667%; }
+    padding-left: 0; }
     #event #about {
       background: white;
       padding: 0;
-      margin: 0; }
-      #event #about p {
+      margin: 0;
+      margin-left: 25%; }
+      #event #about h2, #event #about p {
         margin: 15px; }
     #event #sunjs {
       display: block; }
 
   #venue {
-    padding-left: 16.6667%; }
+    padding-left: 0; }
     #venue .content {
+      margin-left: 25%;
       padding: 0; }
       #venue .content h2, #venue .content h3, #venue .content div {
         margin: 15px; }
     #venue #map {
       display: block; } }
 @media screen and (min-width: 80em) {
-  #into {
-    min-height: 700px; }
+  #intro {
+    min-height: 600px; }
 
+  #venue .content {
+    margin-left: 25%; }
+    #venue .content h2, #venue .content p {
+      padding: 25px; }
+
+  #event #about {
+    margin-left: 25%;
+    text-align: left; }
+    #event #about h2, #event #about p {
+      padding: 25px; }
   #event #sunjs {
     background-size: auto;
     background-position: 50%; } }
