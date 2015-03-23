@@ -1,1 +1,5 @@
-[]
+[{
+  "name": "DigitalOcean",
+  "id": "digitalocean",
+  "url": "http://digitalocean.com"
+  }]
