@@ -399,9 +399,6 @@ footer {
   .mediterranean-menu-brand {
     margin-right: 50px;
   }
-  .mediterranean-menu-toggle {
-    display: none;
-  }
   .speakers {
     padding-left: 16.6667%;
   }
@@ -451,31 +448,8 @@ footer {
 }
 
 @media screen and (max-width:62em) {
-  .mediterranean-menu-wrapper {
-    height: 55px;
-  }
-  .mediterranean-menu-brand {
-    display: block;
-    width: auto;
-    height: 53px;
-    background: url("/media/sunjs.png") no-repeat;
-    background-size: 53px 53px;
-    background-position: center;
-    padding: 0;
-    margin: 0;
-    span {display: none;}
-  }
-
-  .mediterranean-menu {
-    display: block;
-    padding: 0 !important;
-  }
   .mediterranean-menu-screen {
     height: 50px;
-  }
-  .mediterranean-menu-toggle {
-    display: block;
-    display: none\9;
   }
   .mediterranean-menu-bottom {
     position: absolute;

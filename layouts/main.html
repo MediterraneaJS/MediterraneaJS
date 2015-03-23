@@ -24,45 +24,45 @@ Organised by BarcelonaJS for the community.">
 </head>
 
 <body>
-  <div class="mediterranean-menu-wrapper">
-    <div class="pure-menu mediterranean-menu mediterranean-menu-top">
-      <a href="http://mediterraneajs.eu" class="pure-menu-heading mediterranean-menu-brand">
+  <div class="c-header">
+    <div class="pure-menu c-header__brand">
+      <a href="#" class="c-header__toggle" id="toggle">
+        <s class="c-header__toggle__bar"></s>
+        <s class="c-header__toggle__bar"></s>
+      </a>
+      <a href="http://mediterraneajs.eu" class="c-header__brand__logo">
         <span>MediterráneaJS</span>
       </a>
-      <a href="#" class="mediterranean-menu-toggle" id="toggle">
-        <s class="bar"></s>
-        <s class="bar"></s>
-      </a>
     </div>
-    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable mediterranean-menu mediterranean-menu-bottom mediterranean-menu-tucked" id="tuckedMenu">
+    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable c-header__navigation mediterranean-menu-bottom mediterranean-menu-tucked" id="tuckedMenu">
       <div class="mediterranean-menu-screen"></div>
-      <ul class="pure-menu-list">
-        <li class="pure-menu-item">
+      <ul class="pure-menu-list c-header__navigation__links">
+        <li class="pure-menu-item c-header__navigation__item">
           <a href="/" class="pure-menu-link">
             <span>Home</span>
           </a>
         </li>
-        <li class="pure-menu-item">
+        <li class="pure-menu-item c-header__navigation__item">
           <a href="#speakers" class="pure-menu-link">
             <span>Speakers</span>
           </a>
         </li>
-        <li class="pure-menu-item">
+        <li class="pure-menu-item c-header__navigation__item">
           <a href="#event" class="pure-menu-link">
             <span>The Event</span>
           </a>
         </li>
-        <li class="pure-menu-item">
+        <li class="pure-menu-item c-header__navigation__item">
           <a href="#venue" class="pure-menu-link">
             <span>Venue</span>
           </a>
         </li>
-        <li class="pure-menu-item">
+        <li class="pure-menu-item c-header__navigation__item">
           <a href="#schedule" class="pure-menu-link">
             <span>Schedule</span>
           </a>
         </li>
-        <li class="pure-menu-item">
+        <li class="pure-menu-item c-header__navigation__item">
           <a href="#sponsors" class="pure-menu-link">
             <span>Sponsors</span>
           </a>
@@ -192,6 +192,14 @@ Organised by BarcelonaJS for the community.">
       </div>
     </div>
   </footer>
+  <script>
+(function (window, document) {
+document.getElementById('toggle').addEventListener('click', function (e) {
+    document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+    document.getElementById('toggle').classList.toggle('is-open');
+});
+})(this, this.document);
+</script>
 </body>
 
 </html>
