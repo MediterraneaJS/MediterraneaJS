@@ -120,7 +120,7 @@ gulp.task('minify', ['render'], function () {
 });
 
 gulp.task('sass', function () {
-  return plugin.rubySass(paths.sass, {
+  return plugin.rubySass(paths.sass+"/mediterranea.scss", {
       sourcemap: false
     })
     .on('error', function (err) {
