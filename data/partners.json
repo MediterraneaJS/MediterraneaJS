@@ -12,5 +12,15 @@
     "name": "Barcinno",
     "id": "barcinno",
     "url": "http://www.barcinno.com"
+},
+  {
+    "name": "Cooltra",
+    "id": "cooltra",
+    "url": "http://www.cooltra.com"
+},
+  {
+    "name": "Miniguide",
+    "id": "miniguide",
+    "url": "http://www.miniguide.es"
 }
 ]

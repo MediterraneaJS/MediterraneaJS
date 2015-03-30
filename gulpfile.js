@@ -59,10 +59,26 @@ gulp.task('generate-speakers', function () {
 });
 
 // render each 'view' with partials and layout
-gulp.task('render-views', function () {
-  return gulp.src(paths.views + '/*.html')
+gulp.task('render-index', function () {
+  return gulp.src(paths.views + '/index.html')
     .pipe(render({
       layout: path.join(paths.layouts, 'main.html')
+    }))
+    .pipe(gulp.dest(paths.dist))
+    .pipe(plugin.connect.reload());
+});
+
+// render each 'view' with partials and layout
+gulp.task('render-views', function () {
+  return gulp.src([
+    paths.views + '/team.html',
+    paths.views + '/barcelona.html',
+    paths.views + '/why.html',
+    paths.views + '/agenda.html',
+    paths.views + '/code_of_conduct.html'
+  ])
+    .pipe(render({
+      layout: path.join(paths.layouts, 'page.html')
     }))
     .pipe(gulp.dest(paths.dist))
     .pipe(plugin.connect.reload());
@@ -71,11 +87,13 @@ gulp.task('render-views', function () {
 gulp.task('render-speakers', function () {
   return gulp.src(paths.views + '/people/*.html')
     .pipe(render({
-      layout: path.join(paths.layouts, 'main.html')
+      layout: path.join(paths.layouts, 'page.html')
     }))
     .pipe(gulp.dest(path.join(paths.dist, 'people')))
     .pipe(plugin.connect.reload());
 });
+
+gulp.task('render', ['render-index', 'render-speakers', 'render-views'], function () {});
 
 // merge JSON files
 gulp.task('merge-json', ['generate-speakers'], function () {
@@ -93,7 +111,7 @@ gulp.task('copy-media', function () {
     .pipe(gulp.dest('dist/media'));
 });
 
-gulp.task('minify', ['render-views', 'render-speakers'], function () {
+gulp.task('minify', ['render'], function () {
   return gulp.src('dist/**/*.html')
     .pipe(plugin.htmlmin({
       collapseWhitespace: true
@@ -117,8 +135,8 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch(paths.sass + '/**/*.scss', ['sass']);
   gulp.watch(paths.media + '/**/*.*', ['copy-media']);
-  gulp.watch(paths.layouts + '/*.html', ['render-views', 'render-speakers']);
-  gulp.watch(paths.views + '/**/*.html', ['render-views', 'render-speakers']);
+  gulp.watch(paths.layouts + '/*.html', ['render']);
+  gulp.watch(paths.views + '/**/*.html', ['render']);
   gulp.watch(paths.js + '/**/*.js', ['minify_js']);
 });
 
