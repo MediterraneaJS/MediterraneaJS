@@ -21,9 +21,15 @@ a {
 .container {
   padding-top: 55px; }
 
+.page {
+  padding: 0 55px; }
+
 hr {
   border: 2px solid white;
   width: 150px; }
+
+.promovideo {
+  height: 125px; }
 
 .center {
   text-align: center; }
@@ -38,76 +44,104 @@ hr {
   padding-bottom: 0;
   padding-top: 0; }
 
-.mediterranean-menu-wrapper {
+.c-header {
   background-color: white;
-  white-space: nowrap;
   position: fixed;
-  z-index: 9999999;
-  width: 100%; }
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1; }
 
-.mediterranean-menu {
-  height: 80px;
-  line-height: 80px;
+@media screen and (max-width: 62em) {
+  .c-header {
+    height: 55px; } }
+.c-header__brand {
   display: inline-block;
-  width: auto;
+  height: 80px;
+  margin-right: 50px;
   vertical-align: middle;
-  -webkit-font-smoothing: antialiased; }
+  width: auto; }
 
-.pure-menu-item {
-  height: 80px;
-  line-height: 60px;
-  padding-bottom: 0; }
-
-.mediterranean-menu .pure-menu-link,
-.mediterranean-menu .pure-menu-heading {
-  color: #38ABC8;
-  font-family: 'Montserrat', serif; }
-
-.mediterranean-menu-brand {
-  display: block;
-  width: 250px;
-  height: 80px;
-  background: url("/media/mediterraneajs.png") no-repeat;
+@media screen and (max-width: 62em) {
+  .c-header__brand {
+    display: block;
+    height: 55px; } }
+.c-header__brand__logo {
+  background: url("/media/mediterraneajs.png") no-repeat center;
   background-size: 100%;
-  background-position: center;
-  padding: 0; }
-  .mediterranean-menu-brand span {
+  display: block;
+  height: 80px;
+  width: 250px; }
+  .c-header__brand__logo span {
     display: none; }
 
-.mediterranean-menu-toggle {
-  width: 44px;
+@media screen and (max-width: 62em) {
+  .c-header__brand__logo {
+    background: url("/media/sunjs.png") no-repeat center;
+    background-size: 53px 53px;
+    height: 55px;
+    margin: auto;
+    width: 100%; } }
+.c-header__toggle {
+  display: none;
+  float: right;
   height: 44px;
-  display: block;
-  position: absolute;
-  top: 3px;
-  right: 0; }
+  margin-top: 7px;
+  position: relative;
+  width: 44px; }
 
-.mediterranean-menu-toggle .bar {
+@media screen and (max-width: 62em) {
+  .c-header__toggle {
+    display: block; } }
+.c-header__toggle__bar {
   background-color: #38ABC8;
   display: block;
   width: 20px;
   height: 2px;
   border-radius: 100px;
   position: absolute;
-  top: 22px;
+  top: 25px;
   right: 12px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
-.mediterranean-menu-toggle .bar:first-child {
+.c-header__toggle__bar:first-child {
   -webkit-transform: translateY(-6px);
   -ms-transform: translateY(-6px);
   transform: translateY(-6px); }
 
-.mediterranean-menu-toggle.x .bar {
+.c-header__toggle.is-open .c-header__toggle__bar {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.mediterranean-menu-toggle.x .bar:first-child {
+.c-header__toggle.is-open .c-header__toggle__bar:first-child {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
+.c-header__navigation {
+  display: inline; }
+
+.c-header__navigation__links {
+  vertical-align: text-top; }
+
+.c-header__navigation__item a {
+  border-bottom: 9px solid transparent;
+  color: #38ABC8;
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased; }
+
+.c-header__navigation__item a:hover,
+.c-header__navigation__item a.active {
+  background-color: white;
+  border-bottom-color: #38ABC8; }
+
+.c-header__brand .pure-menu-link,
+.c-header__brand .pure-menu-heading {
+  color: #38ABC8; }
 
 .mediterranean-menu-screen {
   background-color: rgba(0, 0, 0, 0.5);
@@ -124,21 +158,23 @@ hr {
   -ms-transform: translateY(-44px);
   transform: translateY(-44px); }
 
-.pure-menu-item a {
-  color: #374546;
-  font-family: 'Montserrat', serif;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 12px;
-  padding-top: 1px; }
+.custom-menu-tucked .custom-menu-screen {
+  -webkit-transform: translateY(-44px);
+  -ms-transform: translateY(-44px);
+  transform: translateY(-44px); }
 
-.pure-menu-item a:hover,
-.pure-menu-item a.active {
-  height: 60px;
-  line-height: 60px;
-  padding-bottom: 0;
-  background-color: white;
-  border-bottom: 9px solid #38ABC8; }
+.page img {
+  width: 100%; }
+
+.walking {
+  height: 32px;
+  background: white url("/media/walking.png") no-repeat;
+  background-size: 30px;
+  padding-left: 35px; }
+
+.hotel img {
+  width: 100%;
+  max-height: 200px; }
 
 section .inner {
   padding: 5px; }
@@ -394,6 +430,9 @@ footer {
     display: none; }
 
 @media screen and (min-width: 48em) {
+  .promovideo {
+    height: 370px; }
+
   #intro {
     text-align: left;
     background: url("/media/beach.jpg") repeat-x center; }
@@ -414,6 +453,12 @@ footer {
     footer .meta, footer .links {
       display: block; } }
 @media screen and (min-width: 64em) {
+  .page {
+    padding: 0 16.6667%; }
+
+  .promovideo {
+    height: 385px; }
+
   #intro {
     padding-top: 50px;
     padding-left: 50px;
@@ -424,9 +469,6 @@ footer {
 
   .mediterranean-menu-brand {
     margin-right: 50px; }
-
-  .mediterranean-menu-toggle {
-    display: none; }
 
   .speakers {
     padding-left: 16.6667%; }
@@ -453,6 +495,9 @@ footer {
     #venue #map {
       display: block; } }
 @media screen and (min-width: 80em) {
+  .promovideo {
+    height: 720px; }
+
   #intro {
     min-height: 600px; }
 
@@ -470,31 +515,8 @@ footer {
     background-size: auto;
     background-position: 50%; } }
 @media screen and (max-width: 62em) {
-  .mediterranean-menu-wrapper {
-    height: 55px; }
-
-  .mediterranean-menu-brand {
-    display: block;
-    width: auto;
-    height: 53px;
-    background: url("/media/sunjs.png") no-repeat;
-    background-size: 53px 53px;
-    background-position: center;
-    padding: 0;
-    margin: 0; }
-    .mediterranean-menu-brand span {
-      display: none; }
-
-  .mediterranean-menu {
-    display: block;
-    padding: 0 !important; }
-
   .mediterranean-menu-screen {
     height: 50px; }
-
-  .mediterranean-menu-toggle {
-    display: block;
-    display: none\9; }
 
   .mediterranean-menu-bottom {
     position: absolute;
