@@ -18,11 +18,18 @@ a {
   color: #38ABC8;
   text-decoration: none; }
 
+dt {
+  margin-top: 25px; }
+
 .container {
   padding-top: 55px; }
 
 .page {
   padding: 0 55px; }
+  .page .meta dl {
+    margin-left: 35px; }
+    .page .meta dl dd {
+      margin-left: 0; }
 
 hr {
   border: 2px solid white;
