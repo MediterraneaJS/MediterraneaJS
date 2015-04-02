@@ -104,6 +104,7 @@ section {
     color: white;
   }
   .header {
+    z-index: 99999;
     h1 {
       text-transform: uppercase;
       margin-left: 0;
@@ -148,7 +149,7 @@ section {
   .speaker {
     padding-left: 5px;
     width: 150px;
-    height: 230px;
+    height: 280px;
     float: left;
   }
   .speakers {
@@ -183,7 +184,6 @@ section {
     position: relative;
     top: -62px;
     right: -120px;
-    z-index: 99999;
   }
   .meta {
     h3 {
