@@ -1,26 +1,36 @@
 [{
     "name": "Itnig",
     "id": "itnig",
+    "logo": "itnig.jpg",
     "url": "http://itnig.net"
 },
   {
     "name": "APIdays Mediterranea",
     "id": "apidays",
+    "logo": "apidays.jpg",
     "url": "http://mediterranea.apidays.io"
 },
   {
     "name": "Barcinno",
     "id": "barcinno",
+    "logo": "barcinno.jpg",
     "url": "http://www.barcinno.com"
 },
   {
     "name": "Cooltra",
     "id": "cooltra",
+    "logo": "cooltra.jpg",
     "url": "http://www.cooltra.com"
 },
   {
     "name": "Miniguide",
     "id": "miniguide",
+    "logo": "miniguide.jpg",
     "url": "http://www.miniguide.es"
+}, {
+    "name": "Talent Garden Barcelona",
+    "id": "talentgarden",
+    "logo": "talentgarden.png",
+    "url": "http://barcelona.talentgarden.org"
 }
 ]
