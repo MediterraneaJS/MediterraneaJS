@@ -22,12 +22,6 @@ a {
 dt {
   margin-top: 25px;
 }
-.container {
-  height: 100%;
-  overflow: auto;
-  position: fixed;
-  top: 55px;
-}
 .page {
   padding: 0 55px;
 
@@ -59,7 +53,7 @@ hr {
   padding-bottom: 0;
   padding-top: 0;
 }
-
+@import "objects/content";
 @import "components/menu";
 
 .page img {
