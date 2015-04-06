@@ -111,6 +111,11 @@ gulp.task('copy-media', function () {
     .pipe(gulp.dest('dist/media'));
 });
 
+gulp.task('copy-cname', function () {
+  return gulp.src('./CNAME')
+    .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('minify', ['render'], function () {
   return gulp.src('dist/**/*.html')
     .pipe(plugin.htmlmin({
@@ -148,5 +153,5 @@ gulp.task('deploy', function () {
 gulp.task('clean', ['clean-speakers', 'clean-dist'], function () {});
 gulp.task('prebuild', ['merge-json'], function () {});
 gulp.task('generate-views', ['generate-speaker-views'], function () {});
-gulp.task('build', ['minify', 'minify_js', 'copy-media', 'sass'], function () {});
+gulp.task('build', ['minify', 'minify_js', 'copy-media', 'sass', 'copy-cname'], function () {});
 gulp.task('default', ['build', 'serve', 'watch'], function () {});
