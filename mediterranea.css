@@ -21,9 +21,6 @@ a {
 dt {
   margin-top: 25px; }
 
-.container {
-  padding-top: 55px; }
-
 .page {
   padding: 0 55px; }
   .page .meta dl {
@@ -51,9 +48,18 @@ hr {
   padding-bottom: 0;
   padding-top: 0; }
 
+.o-content {
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 80px; }
+
+@media screen and (max-width: 62em) {
+  .o-content {
+    top: 55px; } }
 .c-header {
   background-color: white;
-  position: fixed;
+  position: relative;
   white-space: nowrap;
   width: 100%;
   z-index: 1; }
@@ -71,7 +77,8 @@ hr {
 @media screen and (max-width: 62em) {
   .c-header__brand {
     display: block;
-    height: 55px; } }
+    height: 55px;
+    margin-right: 0; } }
 .c-header__brand__logo {
   background: url("/media/mediterraneajs.png") no-repeat center;
   background-size: 100%;
@@ -116,22 +123,34 @@ hr {
   -ms-transform: translateY(-6px);
   transform: translateY(-6px); }
 
-.c-header__toggle.is-open .c-header__toggle__bar {
+.is-open .c-header__toggle .c-header__toggle__bar {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.c-header__toggle.is-open .c-header__toggle__bar:first-child {
+.is-open .c-header__toggle .c-header__toggle__bar:first-child {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
 .c-header__navigation {
+  background-color: white;
   display: inline; }
 
+@media screen and (max-width: 62em) {
+  .c-header__navigation {
+    display: none; }
+    .is-open .c-header__navigation {
+      display: block;
+      overflow-x: scroll; }
+    .is-open .c-header__navigation::-webkit-scrollbar {
+      display: none; } }
 .c-header__navigation__links {
   vertical-align: text-top; }
 
+@media screen and (max-width: 62em) {
+  .c-header__navigation__item {
+    padding-top: 16px; } }
 .c-header__navigation__item a {
   border-bottom: 9px solid transparent;
   color: #38ABC8;
@@ -149,26 +168,6 @@ hr {
 .c-header__brand .pure-menu-link,
 .c-header__brand .pure-menu-heading {
   color: #38ABC8; }
-
-.mediterranean-menu-screen {
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  height: 0;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1; }
-
-.mediterranean-menu-tucked .mediterranean-menu-screen {
-  -webkit-transform: translateY(-44px);
-  -ms-transform: translateY(-44px);
-  transform: translateY(-44px); }
-
-.custom-menu-tucked .custom-menu-screen {
-  -webkit-transform: translateY(-44px);
-  -ms-transform: translateY(-44px);
-  transform: translateY(-44px); }
 
 .page img {
   width: 100%; }
@@ -561,27 +560,10 @@ footer {
     background-color: #808080 \9;
     z-index: 100; }
 
-  .pure-menu-list, .pure-menu-item {
-    height: 50px;
-    line-height: 80px; }
-
   .mediterranean-menu-bottom .pure-menu-link {
     opacity: 1;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
     -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
-
-  .mediterranean-menu-bottom.mediterranean-menu-tucked .pure-menu-link {
-    -webkit-transform: translateX(-140px);
-    -ms-transform: translateX(-140px);
-    transform: translateX(-140px);
-    opacity: 0;
-    opacity: 1\9; }
-
-  .pure-menu-horizontal.mediterranean-menu-tucked {
-    z-index: -1;
-    top: 55px;
-    position: absolute;
-    overflow: hidden; } }
+    transition: all 0.5s; } }
