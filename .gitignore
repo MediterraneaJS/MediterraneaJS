@@ -31,5 +31,6 @@ dist
 dist/
 .sass-cache/
 .sass-cache
+.publish
 views/speakers/
 views/speakers
