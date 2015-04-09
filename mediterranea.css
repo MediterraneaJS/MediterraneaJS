@@ -289,8 +289,7 @@ section h2 span {
   color: white;
   text-decoration: none;
   width: 200px;
-  margin: 0 auto;
-  margin-top: 35px; }
+  margin: 35px auto 0; }
 .page .person:hover {
   text-decoration: none;
   color: #38ABC8; }
@@ -395,33 +394,45 @@ section h2 span {
   list-style: none;
   padding-left: 0; }
 
-#sponsors-banner a {
-  line-height: 50px;
-  display: block;
-  height: 50px;
-  min-width: 50px;
-  color: black;
-  background-size: 50px 50px;
-  background-position: center;
-  background-repeat: no-repeat; }
-#sponsors-banner .opportunity {
-  background-image: url("/media/sponsors/sponsor.png"); }
-  #sponsors-banner .opportunity span {
-    display: none; }
+#sponsors-banner ul {
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center; }
+  #sponsors-banner ul li {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #sponsors-banner ul li a {
+      display: block;
+      height: 75px;
+      color: black;
+      border: 0;
+      background-size: 75px;
+      background-position: center;
+      background-repeat: no-repeat; }
+    #sponsors-banner ul li span {
+      display: none; }
 
-#sponsors a {
-  line-height: 200px;
-  display: block;
-  height: 200px;
-  min-width: 200px;
-  color: black;
-  background-size: 200px 200px;
-  background-position: center;
-  background-repeat: no-repeat; }
-#sponsors .opportunity {
-  background-image: url("/media/sponsors/sponsor.png"); }
-  #sponsors .opportunity span {
-    display: none; }
+#sponsors {
+  background-color: #F2F2F2;
+  padding-bottom: 25px; }
+  #sponsors .sponsor {
+    height: 200px;
+    width: 200px;
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px; }
+    #sponsors .sponsor a {
+      height: 200px;
+      width: 200px;
+      display: block;
+      background-size: 200px;
+      background-position: center;
+      background-repeat: no-repeat; }
+      #sponsors .sponsor a span {
+        display: none; }
 
 #partners {
   background-color: #F2F2F2;
@@ -432,15 +443,30 @@ section h2 span {
     float: left;
     padding-right: 15px;
     padding-bottom: 15px; }
-  #partners a {
-    height: 100px;
-    width: 100px;
-    display: block;
-    background-size: 100px 100px;
-    background-position: center;
-    background-repeat: no-repeat; }
-    #partners a span {
-      display: none; }
+    #partners .partner a {
+      height: 100px;
+      width: 100px;
+      display: block;
+      background-size: 100px 100px;
+      background-position: center;
+      background-repeat: no-repeat; }
+      #partners .partner a span {
+        display: none; }
+  #partners .sponsor {
+    height: 200px;
+    width: 200px;
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px; }
+    #partners .sponsor a {
+      height: 200px;
+      width: 200px;
+      display: block;
+      background-size: 200px 200px;
+      background-position: center;
+      background-repeat: no-repeat; }
+      #partners .sponsor a span {
+        display: none; }
 
 footer {
   padding: 4.1667%;
@@ -461,7 +487,8 @@ footer {
     font-family: 'Merriweather', serif; }
   footer a:hover {
     color: #38ABC8; }
-  footer .meta, footer .links {
+  footer .meta,
+  footer .links {
     display: none; }
 
 @media screen and (min-width: 48em) {
@@ -485,7 +512,8 @@ footer {
 
   footer {
     padding: 0; }
-    footer .meta, footer .links {
+    footer .meta,
+    footer .links {
       display: block; } }
 @media screen and (min-width: 64em) {
   .page {
@@ -513,9 +541,9 @@ footer {
     #event #about {
       background: white;
       padding: 0;
-      margin: 0;
-      margin-left: 25%; }
-      #event #about h2, #event #about p {
+      margin: 0 0 0 25%; }
+      #event #about h2,
+      #event #about p {
         margin: 15px; }
     #event #sunjs {
       display: block; }
@@ -525,7 +553,9 @@ footer {
     #venue .content {
       margin-left: 25%;
       padding: 0; }
-      #venue .content h2, #venue .content h3, #venue .content div {
+      #venue .content h2,
+      #venue .content h3,
+      #venue .content div {
         margin: 15px; }
     #venue #map {
       display: block; } }
@@ -538,13 +568,15 @@ footer {
 
   #venue .content {
     margin-left: 25%; }
-    #venue .content h2, #venue .content p {
+    #venue .content h2,
+    #venue .content p {
       padding: 25px; }
 
   #event #about {
     margin-left: 25%;
     text-align: left; }
-    #event #about h2, #event #about p {
+    #event #about h2,
+    #event #about p {
       padding: 25px; }
   #event #sunjs {
     background-size: auto;
