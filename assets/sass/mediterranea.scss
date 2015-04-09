@@ -22,9 +22,6 @@ a {
 dt {
   margin-top: 25px;
 }
-.container {
-  padding-top:55px;
-}
 .page {
   padding: 0 55px;
 
@@ -56,7 +53,7 @@ hr {
   padding-bottom: 0;
   padding-top: 0;
 }
-
+@import "objects/content";
 @import "components/menu";
 
 .page img {
@@ -562,10 +559,7 @@ footer {
     background-color: #808080\9;
     z-index: 100;
   }
-  .pure-menu-list, .pure-menu-item {
-    height: 50px;
-    line-height: 80px;
-  }
+
   .mediterranean-menu-bottom .pure-menu-link {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -576,19 +570,5 @@ footer {
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  .mediterranean-menu-bottom.mediterranean-menu-tucked .pure-menu-link {
-    -webkit-transform: translateX(-140px);
-    -moz-transform: translateX(-140px);
-    -ms-transform: translateX(-140px);
-    transform: translateX(-140px);
-    opacity: 0;
-    opacity: 1\9;
-  }
-  .pure-menu-horizontal.mediterranean-menu-tucked {
-    z-index: -1;
-    top: 55px;
-    position: absolute;
-    overflow: hidden;
   }
 }

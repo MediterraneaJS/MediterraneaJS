@@ -1,0 +1,12 @@
+.o-content {
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 80px;
+}
+
+@media screen and (max-width:62em) {
+  .o-content {
+    top: 55px;
+  }
+}

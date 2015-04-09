@@ -1,6 +1,6 @@
 .c-header {
   background-color: white;
-  position: fixed;
+  position: relative;
   white-space: nowrap;
   width: 100%;
   z-index: 1;
@@ -24,6 +24,7 @@
   .c-header__brand {
     display: block;
     height: 55px;
+    margin-right: 0;
   }
 }
 
@@ -88,18 +89,24 @@
   transform: translateY(-6px);
 }
 
-.c-header__toggle.is-open .c-header__toggle__bar {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.c-header__toggle {
+
+  .is-open & .c-header__toggle__bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+  }
 }
 
-.c-header__toggle.is-open .c-header__toggle__bar:first-child {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.c-header__toggle {
+  .is-open & .c-header__toggle__bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
 }
 
 ////////////////
@@ -107,15 +114,33 @@
 ////////////////
 
 .c-header__navigation {
+  background-color: white;
   display: inline;
+}
+
+@media screen and (max-width:62em) {
+  .c-header__navigation {
+    display: none;
+
+    .is-open & {
+      display: block;
+      overflow-x: scroll;
+    }
+
+    .is-open &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 .c-header__navigation__links {
   vertical-align: text-top;
 }
 
-.c-header__navigation__item {
-
+@media screen and (max-width:62em) {
+  .c-header__navigation__item {
+    padding-top: 16px;
+  }
 }
 
 .c-header__navigation__item a {
@@ -139,32 +164,4 @@
 .c-header__brand .pure-menu-link,
 .c-header__brand .pure-menu-heading {
   color: $lightblue;
-}
-
-
-
-.mediterranean-menu-screen {
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-  height: 0;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-.mediterranean-menu-tucked .mediterranean-menu-screen {
-  -webkit-transform: translateY(-44px);
-  -moz-transform: translateY(-44px);
-  -ms-transform: translateY(-44px);
-  transform: translateY(-44px);
-}
-
-.custom-menu-tucked .custom-menu-screen {
-    -webkit-transform: translateY(-44px);
-    -moz-transform: translateY(-44px);
-    -ms-transform: translateY(-44px);
-    transform: translateY(-44px);
 }
