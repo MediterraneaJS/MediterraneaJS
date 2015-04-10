@@ -403,7 +403,8 @@ section h2 span {
     height: 75px;
     width: 75px;
     margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-right: 25px; }
     #sponsors-banner ul li a {
       display: block;
       height: 75px;
@@ -414,59 +415,62 @@ section h2 span {
       background-repeat: no-repeat; }
     #sponsors-banner ul li span {
       display: none; }
+#sponsors-banner ul li:last-child {
+  margin-right: 0; }
 
 #sponsors {
   background-color: #F2F2F2;
   padding-bottom: 25px; }
-  #sponsors .sponsor {
-    height: 200px;
-    width: 200px;
-    float: left;
-    padding-right: 15px;
-    padding-bottom: 15px; }
-    #sponsors .sponsor a {
+  #sponsors ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center; }
+    #sponsors ul li {
+      display: inline-block;
       height: 200px;
       width: 200px;
-      display: block;
-      background-size: 200px;
-      background-position: center;
-      background-repeat: no-repeat; }
-      #sponsors .sponsor a span {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 50px; }
+      #sponsors ul li a {
+        display: block;
+        height: 200px;
+        color: black;
+        border: 0;
+        background-size: 200px;
+        background-position: center;
+        background-repeat: no-repeat; }
+      #sponsors ul li span {
         display: none; }
+  #sponsors ul li:last-child {
+    margin-right: 0; }
 
 #partners {
   background-color: #F2F2F2;
   padding-bottom: 25px; }
-  #partners .partner {
-    height: 100px;
-    width: 100px;
-    float: left;
-    padding-right: 15px;
-    padding-bottom: 15px; }
-    #partners .partner a {
+  #partners ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center; }
+    #partners ul li {
+      display: inline-block;
       height: 100px;
       width: 100px;
-      display: block;
-      background-size: 100px 100px;
-      background-position: center;
-      background-repeat: no-repeat; }
-      #partners .partner a span {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 50px; }
+      #partners ul li a {
+        display: block;
+        height: 100px;
+        color: black;
+        border: 0;
+        background-size: 100px;
+        background-position: center;
+        background-repeat: no-repeat; }
+      #partners ul li span {
         display: none; }
-  #partners .sponsor {
-    height: 200px;
-    width: 200px;
-    float: left;
-    padding-right: 15px;
-    padding-bottom: 15px; }
-    #partners .sponsor a {
-      height: 200px;
-      width: 200px;
-      display: block;
-      background-size: 200px 200px;
-      background-position: center;
-      background-repeat: no-repeat; }
-      #partners .sponsor a span {
-        display: none; }
+  #partners ul li:last-child {
+    margin-right: 0; }
 
 footer {
   padding: 4.1667%;
