@@ -1,5 +1,11 @@
 [{
   "name": "DigitalOcean",
   "id": "digitalocean",
-  "url": "http://digitalocean.com"
-  }]
+  "url": "http://digitalocean.com",
+  "logo": "digitalocean.png"
+  }, {
+    "name": "npm",
+    "id": "npm",
+    "url": "http://npmjs.com",
+    "logo": "npm.png"
+    }]

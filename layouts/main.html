@@ -100,10 +100,16 @@ Organised by BarcelonaJS for the community.">
       </div>
     </section>
 
-    <section id="sponsors-banner" class="pure-g center">
-      <a class="pure-u-1-1 opportunity" href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">
-        <span>[your logo here]</span>
-      </a>
+    <section id="sponsors-banner" class="pure-g">
+      <ul class="pure-u-1-1">
+        {{#sponsors}}
+        <li>
+          <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
+            <span>{{name}}</span>
+          </a>
+        </li>
+        {{/sponsors}}
+      </ul>
     </section>
 
     {{>yield}}
@@ -114,11 +120,18 @@ Organised by BarcelonaJS for the community.">
           <span>Thanks to our Sponsors</span>
         </h2>
       </header>
-      <div class="pure-u-4-24"></div>
-      <a class="pure-u-16-24 opportunity" href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">
-        <span>[your logo here]</span>
-      </a>
-      <div class="pure-u-4-24"></div>
+      <ul class="pure-u-1-1">
+        {{#sponsors}}
+        <li>
+          <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
+            <span>{{name}}</span>
+          </a>
+        </li>
+        {{/sponsors}}
+      </ul>
+      <div class="pure-u-1-1 center">
+        <a href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">Get in touch for our sponsorship opportunities.</a>
+      </div>
     </section>
 
 
@@ -128,16 +141,15 @@ Organised by BarcelonaJS for the community.">
           <span>Partners</span>
         </h2>
       </header>
-      <div class="pure-u-1-6"></div>
-      <div class="pure-u-5-6">
+      <ul class="pure-u-1-1">
         {{#partners}}
-        <div class="partner">
-          <a href="{{url}}" id="partners-{{id}}" style="background-image: url(/media/partners/{{logo}})">
+        <li>
+          <a href="{{url}}" id="partner-{{id}}" style="background-image: url(/media/partners/{{logo}})">
             <span>{{name}}</span>
           </a>
-        </div>
+        </li>
         {{/partners}}
-      </div>
+      </ul>
     </section>
 
     <footer>
