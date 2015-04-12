@@ -459,6 +459,11 @@ footer {
 @media screen and (min-width:35.5em) {
 
 }
+@media screen and (max-width:47.99999em) {
+  ul.intro-pros li {
+    display: block;
+  }
+}
 @media screen and (min-width:48em) {
   .promovideo {
     height: 370px;
