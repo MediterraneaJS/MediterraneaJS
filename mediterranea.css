@@ -50,6 +50,7 @@ hr {
 
 .o-content {
   height: 100%;
+  width: 100%;
   overflow: auto;
   position: fixed;
   top: 80px; }
@@ -495,6 +496,9 @@ footer {
   footer .links {
     display: none; }
 
+@media screen and (max-width: 47.99999em) {
+  ul.intro-pros li {
+    display: block; } }
 @media screen and (min-width: 48em) {
   .promovideo {
     height: 370px; }
