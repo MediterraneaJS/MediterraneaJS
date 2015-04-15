@@ -32,5 +32,10 @@
     "id": "talentgarden",
     "logo": "talentgarden.png",
     "url": "http://barcelona.talentgarden.org"
+}, {
+    "name": "JobFluent",
+    "id": "jobfluent",
+    "logo": "jobfluent.jpg",
+    "url": "http://jobfluent.com"
 }
 ]
