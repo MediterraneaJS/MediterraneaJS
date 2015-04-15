@@ -6,6 +6,8 @@ talk: JavaScript Craftsmanship
 
 ---
 
+![Francisco Ferreira](/media/speakers/francisco_ferreira.jpg)
+
 # Francisco Ferreira
 Specialized front end web engineer with an entrepreneurial spirit and a passion for solving problems.
 
@@ -31,3 +33,5 @@ Topics covered:
 - Object Oriented JS
 - Unit Testing
 - Code structuring
+
+[@fmsf303](https://twitter.com/fmsf303)

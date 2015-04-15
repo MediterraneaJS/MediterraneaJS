@@ -6,6 +6,8 @@ talk: The Fluid Architecture
 
 ---
 
+![Alex Fernández](/media/speakers/alex_fernandez.jpg)
+
 # Alex Fernández
 Alex Fernández is a Spanish software engineer with 15+ years of experience. Specialized in scalability engineering, both in his day job at MediaSmart Mobile and as a freelance consultant. Speaker at local and international conferences and instructor.
 
@@ -17,3 +19,5 @@ We will illustrate the principles of the fluid architecture with real-life examp
 
 ## Why do you think people should love this talk?
 I think there is a middle ground between monolithic architectural practices and random development. Many JavaScript devs are now building challenging applications and seeking a path that keeps them away from chaos; this talk is an attempt to show how to find that path.
+
+[@pinchito](https://twitter.com/pinchito)

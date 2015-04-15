@@ -6,6 +6,8 @@ talk: Disaster Detection and Monitoring with Wikipedia and JavaScript
 
 ---
 
+![Thomas Steiner](/media/speakers/thomas_steiner.jpg)
+
 # Dr. Thomas Steiner
 I currently work from Hamburg, Germany as an Ads Solutions Engineer for Google.
 
@@ -21,3 +23,5 @@ In this talk, we will describe a global and language-independent detection and m
 
 ## Why do you think people should love this talk?
 It's about JavaScript for good (disaster detection and monitoring), it's about realtime streams, and it has a nice demo.
+
+[@tomayac](https://twitter.com/tomayac)

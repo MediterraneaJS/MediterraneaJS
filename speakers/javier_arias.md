@@ -6,6 +6,8 @@ talk: ES6 Metaprogramming Unleashed
 
 ---
 
+![Javier Arias](/media/speakers/javier_arias.jpg)
+
 # Javier Arias
 Senior Software Engineer, working as hands-on software architect and developer, experience in different sectors such as M2M, Telcos, Finance and Airports.
 
@@ -26,3 +28,5 @@ In the talk we will shortly revisit Javascript metaprogramming and explain ES6 P
 
 ## Why do you think people should love this talk?
 Metaprogramming is fun, powerful and risky...
+
+[@javier_arilos](https://twitter.com/javier_arilos)

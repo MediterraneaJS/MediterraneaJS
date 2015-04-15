@@ -6,6 +6,8 @@ talk: es6.concurrency()
 
 ---
 
+![Ingvar Stepanyan](/media/speakers/ingvar_stepanyan.jpg)
+
 # Ingvar Stepanyan
 JavaScript developer, speaker and reverse engineer. Obsessed D2D programmer. Sometimes human.
 
@@ -16,3 +18,5 @@ But now, new ECMAScript APIs are coming and they are going to change literally e
 
 ## Why do you think people should love this talk?
 A lot of people work with data-heavy applications, and they usually want to improve responsiveness for end-users. But, for most apps, it's not that easy to make already existing code work with Web Workers, especially when parallelized code needs to access DOM or to be controlled by user actions.
+
+[@RReverser](https://twitter.com/RReverser)

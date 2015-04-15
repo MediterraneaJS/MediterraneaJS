@@ -5,6 +5,8 @@ tagline: One from many
 
 ---
 
+![David Dias](/media/speakers/david_dias.jpg)
+
 # David Dias
 
 ## "What should I write here???"
@@ -14,3 +16,5 @@ Hi!, I’m David, I work at &yet(http://andyet.com/), which makes me a yeti by d
 I've been curating [LXJS, the Lisbon Javascript Conference](http://lxjs.org), with the help of some extraordinary humans, empowering, encouraging and building the community that I want to be a part of, a topic, or more like a search, that I'm very found of.
 
 Other passions involve Information Security and P2P networks, in fact, I'm currently very close to finish an engineering MSc with a major in P2P networks, having creating things like [`webrtc-explorer`](https://github.com/diasdavid/webrtc-explorer), a browser DHT using WebRTC as a layer of transport (I love to talk about this stuff and learn more too, feel free to ping me anytime :)).
+
+[@daviddias](https://twitter.com/daviddias)
