@@ -1,5 +1,7 @@
 # MediterráneaJS
 
+[![Join the chat at https://gitter.im/MediterraneaJS/MediterraneaJS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/MediterraneaJS/MediterraneaJS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## How to setup
 
 Clone the project. 
