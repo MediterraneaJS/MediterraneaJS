@@ -261,6 +261,9 @@ section h2 span {
   #speakers .person:hover {
     text-decoration: none;
     color: #38ABC8; }
+  #speakers .name {
+    color: #38ABC8;
+    margin-top: 15px; }
   #speakers .portrait {
     height: 150px; }
   #speakers img {
