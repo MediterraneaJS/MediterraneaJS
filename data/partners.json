@@ -37,5 +37,11 @@
     "id": "jobfluent",
     "logo": "jobfluent.jpg",
     "url": "http://jobfluent.com"
+},
+  {
+    "name": "Wayra",
+    "id": "wayra",
+    "logo": "wayra.jpg",
+    "url": "http://wayra.co"
 }
 ]
