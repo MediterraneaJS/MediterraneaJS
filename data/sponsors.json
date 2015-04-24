@@ -1,8 +1,15 @@
-[{
-  "name": "DigitalOcean",
-  "id": "digitalocean",
-  "url": "http://digitalocean.com",
-  "logo": "digitalocean.png"
+[
+  {
+    "name": "Wuaki.tv",
+    "id": "wuaki",
+    "url": "http://wuaki.tv",
+    "logo": "wuaki.jpg"
+    },
+  {
+    "name": "DigitalOcean",
+    "id": "digitalocean",
+    "url": "http://digitalocean.com",
+    "logo": "digitalocean.png"
   }, {
     "name": "npm",
     "id": "npm",
