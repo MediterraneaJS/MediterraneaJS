@@ -145,7 +145,7 @@ gulp.task('watch', function () {
   gulp.watch(paths.js + '/**/*.js', ['minify_js']);
 });
 
-gulp.task('deploy', ['build'], function () {
+gulp.task('deploy', [], function () {
   return gulp.src('./dist/**/*')
     .pipe(plugin.ghPages());
 });
