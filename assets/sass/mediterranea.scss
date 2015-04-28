@@ -30,7 +30,26 @@ dt {
       margin-left: 0;
     }
   }
+
+  .agenda-break, .agenda-info {
+    margin: 50px 0;
+    background-color: $lightblue;
+    padding: 0 15px;
+    color: white;
+    font-size:24px;
+    font-weight: 800;
+  }
+
+  .agenda-qa {
+    margin: 50px 0;
+    background-color: $darkblue;
+    padding: 0 15px;
+    color: white;
+    font-size:24px;
+    font-weight: 800;
+  }
 }
+
 hr {
   border: 2px solid white;
   width: 150px;
@@ -171,7 +190,7 @@ section {
       color: $lightblue;
       margin-top: 15px;
   }
-  
+
   .portrait {
     height: 150px;
   }
@@ -271,7 +290,7 @@ section {
   article {
     background: url("/media/background_triangle/triangulos_darkgray.svg");
     background-size: 2000px;
-    height: 430px;
+    padding-bottom: 50px;
   }
   .schedule-saturday {
     color: white;
@@ -313,6 +332,7 @@ section {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     margin-left: 50%;
+    margin-bottom: 50px;
   }
   .circle-text h4 {
     float: left;
@@ -335,6 +355,49 @@ section {
     list-style: none;
     padding-left: 0;
   }
+
+  .agenda-day {
+    margin: 0 10px;
+    a {
+      color: white;
+    }
+    td {
+      padding-bottom: 10px;
+    }
+  }
+
+  .agenda-talk {
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .agenda-break, .agenda-info {
+    padding-left: 25px;
+    text-align: left;
+    font-weight: 800;
+  }
+
+  .agenda-qa {
+    padding-left: 25px;
+    text-align: left;
+    font-weight: 800;
+  }
+
+  .agenda-time {
+    font-size: 14px;
+    vertical-align: top;
+  }
+
+  .agenda-title {
+    font-weight: 800;
+  }
+
+  .agenda-speaker {
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+  }
+
 }
 #sponsors-banner {
   ul {
@@ -432,6 +495,7 @@ section {
     margin-right: 0;
   }
 }
+
 footer {
   padding: 4.1667%;
   color: white;

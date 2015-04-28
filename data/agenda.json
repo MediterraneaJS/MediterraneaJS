@@ -1,0 +1,235 @@
+[
+  {
+    "day": "Monday, June 22",
+    "sessions": [
+      {
+        "time": "9:30h",
+        "title": "Registration and Breakfast",
+        "class": "agenda-info"
+     },
+      {
+        "time": "9:55h",
+        "title": "Welcome Day 1",
+        "class": "agenda-info"
+     },
+      {
+        "time": "10:00h",
+        "title": "Keynote",
+        "speaker": "Vitaly Friedman",
+        "id": "vitaly_friedman"
+     },
+      {
+        "time": "10:35h",
+        "title": "Disaster Detection and Monitoring with Wikipedia and JavaScript",
+        "speaker": "Thomas Steiner",
+        "id": "thomas_steiner"
+     },
+      {
+        "time": "11:10h",
+        "title": "JavaScript Craftsmanship",
+        "speaker": "Francisco Ferreira",
+        "id": "francisco_ferreira"
+     },
+      {
+        "time": "11:40h",
+        "title": "Coffee break",
+        "class": "agenda-break"
+     },
+      {
+        "time": "12:00h",
+        "title": "ES6 Metaprogramming Unleashed",
+        "speaker": "Javier Arias",
+        "id": "javier_arias"
+     },
+      {
+        "time": "12:35h",
+        "title": "tba",
+        "speaker": "Kris Kowal",
+        "id": "kris_kowal"
+     },
+      {
+        "time": "13:10h",
+        "title": "The 3rd dimension of the web - WebGL and WebVR",
+        "speaker": "Martin Naumann",
+        "id": "martin_naumann"
+     },
+      {
+        "time": "13:45h",
+        "title": "Game development with JS and Phaser",
+        "speaker": "Belen Albeza",
+        "id": "belen_albeza"
+     },
+      {
+        "time": "14:15h",
+        "title": "Lunch break",
+        "class": "agenda-break"
+     },
+      {
+        "time": "15:15h",
+        "title": "How to reduce mobile network latency and battery drain on Front-End",
+        "speaker": "Dmytrii Shchadei",
+        "id": "dmytrii_shchadei"
+     },
+      {
+        "time": "15:50h",
+        "title": "tba",
+        "speaker": "Garann Means",
+        "id": "garann_means"
+     },
+      {
+        "time": "16:25h",
+        "title": "Understanding a community lifecycle",
+        "speaker": "David Dias",
+        "id": "david_dias"
+     },
+      {
+        "time": "17:00h",
+        "title": "tba",
+        "speaker": "Alvaro Lopez Ortega",
+        "id": "alvaro_lopez"
+     },
+      {
+        "time": "17:30h",
+        "title": "Coffee break",
+        "class": "agenda-break"
+     },
+      {
+        "time": "18:00h",
+        "title": "Speaker Q&A Session 1",
+        "class": "agenda-qa"
+     },
+      {
+        "time": "19:00h",
+        "title": "Speaker Q&A Session 2",
+        "class": "agenda-qa"
+     },
+      {
+        "time": "20:00h",
+        "title": "Dinner",
+        "class": "agenda-info"
+     }
+    ]
+  },
+  {
+    "day": "Tuesday, June 23",
+    "sessions": [
+      {
+        "time": "9:30h",
+        "title": "Breakfast",
+        "class": "agenda-info"
+     },
+      {
+        "time": "9:55h",
+        "title": "Welcome Day 2",
+        "class": "agenda-info"
+     },
+      {
+        "time": "10:00h",
+        "title": "Keynote",
+        "speaker": "Dheerja Kaur",
+        "id": "dheerja_kaur"
+     },
+      {
+        "time": "10:35h",
+        "title": "Build Android and iOS apps in JavaScript with React Native",
+        "speaker": "Sven Anders Robbestad",
+        "id": "sven_anders_robbestad"
+     },
+      {
+        "time": "11:10h",
+        "title": "es6.concurrency()",
+        "speaker": "Ingvar Stepanyan",
+        "id": "ingvar_stepanyan"
+     },
+      {
+        "time": "11:40h",
+        "title": "Coffee break",
+        "class": "agenda-break"
+     },
+      {
+        "time": "12:00h",
+        "title": "The Fluid Architecture ",
+        "speaker": "Alex Fernández",
+        "id": "alex_fernandez"
+     },
+      {
+        "time": "12:35h",
+        "title": "Aurelia - the JavaScript framework of the future",
+        "speaker": "Kuba Waliński",
+        "id": "kuba_walinski"
+     },
+      {
+        "time": "13:10h",
+        "title": "tba",
+        "speaker": "Maciej Małecki",
+        "id": "maciej_malecki"
+     },
+      {
+        "time": "13:45h",
+        "title": "Love at first language",
+        "speaker": "Verena Brodbeck",
+        "id": "verena_brodbeck"
+     },
+      {
+        "time": "14:15h",
+        "title": "Lunch break",
+        "class": "agenda-break"
+     },
+      {
+        "time": "15:15h",
+        "title": "tba",
+        "speaker": "CJ Silverio",
+        "id": "cj_silverio"
+     },
+      {
+        "time": "15:50h",
+        "title": "Building Hypermedia APIs in Javascript",
+        "speaker": "Nicolas Grenié",
+        "id": "nicolas_grenie"
+     },
+      {
+        "time": "16:25h",
+        "title": "What-is-HAPIness",
+        "speaker": "Daniela Borges",
+        "id": "daniela_borges"
+     },
+      {
+        "time": "17:00h",
+        "title": "tba",
+        "speaker": "Luke Bond",
+        "id": "luke_bond"
+     },
+      {
+        "time": "17:30h",
+        "title": "Coffee break",
+        "class": "agenda-break"
+     },
+      {
+        "time": "18:00h",
+        "title": "Measuring Micro-services",
+        "speaker": "Richard Rodger",
+        "id": "richard_rodger"
+    },
+      {
+        "time": "18:30h",
+        "title": "Speaker Q&A Session 1",
+        "class": "agenda-qa"
+     },
+      {
+        "time": "19:00h",
+        "title": "Speaker Q&A Session 2",
+        "class": "agenda-qa"
+     },
+      {
+        "time": "19:30h",
+        "title": "Speaker Q&A Session 3",
+        "class": "agenda-qa"
+    },
+      {
+        "time": "20:00h",
+        "title": "Party (St. Joan)",
+        "class": "agenda-info"
+     }
+    ]
+  }
+]

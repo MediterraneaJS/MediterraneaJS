@@ -73,8 +73,7 @@
       </div>
     </a>
     <ul>
-      <li>Smashing Magazine Workshop</li>
-      <li>Mozilla Workshop</li>
+      <li>Workshop: Smart Responsive Design Patterns &amp; Front-End Techniques</li>
     </ul>
     <p>More Workshops and details will be announced soon.</p>
   </article>
@@ -101,8 +100,28 @@
         </h4>
       </div>
     </a>
-    <p>Conference day.
-      <br /><a href="https://trello.com/b/nfkhf2mw/agenda" style="text-decoration:underline">Sneak peek for our lineup</a></p>
+    {{#agenda.0}}
+    <table class="agenda-day">
+    {{#sessions}}
+      <tr>
+        <td class="agenda-time">
+          <span >{{time}}</span>
+        </td>
+        {{#speaker}}
+        <td class="agenda-talk">
+          <a href="/people/{{id}}.html" alt={{speaker}}>
+            <span class="agenda-title">{{title}}</span>
+            <span class="agenda-speaker">{{speaker}}</span>
+          </a>
+        </td>
+        {{/speaker}}
+        {{^speaker}}
+        <td class="{{class}}">{{title}}</td>
+        {{/speaker}}
+      </tr>
+      {{/sessions}}
+      </table>
+    {{/agenda.0}}
   </article>
   <article class="schedule-tuesday pure-u-1 pure-u-md-1-4">
     <h3>Tuesday</h3>
@@ -114,7 +133,27 @@
         </h4>
       </div>
     </a>
-    <p>Conference day.
-      <br /><a href="https://trello.com/b/nfkhf2mw/agenda" style="color: white; text-decoration:underline">Sneak peek for our lineup</a></p>
+    {{#agenda.1}}
+    <table class="agenda-day">
+    {{#sessions}}
+      <tr>
+        <td class="agenda-time">
+          <span >{{time}}</span>
+        </td>
+        {{#speaker}}
+        <td class="agenda-talk">
+          <a href="/people/{{id}}.html" alt="{{speaker}}">
+            <span class="agenda-title">{{title}}</span>
+            <span class="agenda-speaker">{{speaker}}</span>
+          </a>
+        </td>
+        {{/speaker}}
+        {{^speaker}}
+        <td class="{{class}}">{{title}}</td>
+        {{/speaker}}
+      </tr>
+      {{/sessions}}
+      </table>
+    {{/agenda.1}}
   </article>
 </section>
