@@ -27,6 +27,20 @@ dt {
     margin-left: 35px; }
     .page .meta dl dd {
       margin-left: 0; }
+  .page .agenda-break, .page .agenda-info {
+    margin: 50px 0;
+    background-color: #38ABC8;
+    padding: 0 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: 800; }
+  .page .agenda-qa {
+    margin: 50px 0;
+    background-color: #374548;
+    padding: 0 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: 800; }
 
 hr {
   border: 2px solid white;
@@ -347,7 +361,7 @@ section h2 span {
 #schedule article {
   background: url("/media/background_triangle/triangulos_darkgray.svg");
   background-size: 2000px;
-  height: 430px; }
+  padding-bottom: 50px; }
 #schedule .schedule-saturday {
   color: white;
   background: #374548;
@@ -378,7 +392,8 @@ section h2 span {
   padding-bottom: 100%;
   background: #38ABC8;
   border-radius: 50%;
-  margin-left: 50%; }
+  margin-left: 50%;
+  margin-bottom: 50px; }
 #schedule .circle-text h4 {
   float: left;
   width: 100%;
@@ -397,6 +412,32 @@ section h2 span {
 #schedule ul {
   list-style: none;
   padding-left: 0; }
+#schedule .agenda-day {
+  margin: 0 10px; }
+  #schedule .agenda-day a {
+    color: white; }
+  #schedule .agenda-day td {
+    padding-bottom: 10px; }
+#schedule .agenda-talk {
+  text-align: left;
+  padding-left: 25px; }
+#schedule .agenda-break, #schedule .agenda-info {
+  padding-left: 25px;
+  text-align: left;
+  font-weight: 800; }
+#schedule .agenda-qa {
+  padding-left: 25px;
+  text-align: left;
+  font-weight: 800; }
+#schedule .agenda-time {
+  font-size: 14px;
+  vertical-align: top; }
+#schedule .agenda-title {
+  font-weight: 800; }
+#schedule .agenda-speaker {
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px; }
 
 #sponsors-banner ul {
   padding-left: 0;
