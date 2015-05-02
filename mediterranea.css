@@ -55,13 +55,6 @@ hr {
 .right {
   text-align: right; }
 
-.nav-logo span {
-  display: none; }
-
-.pure-menu {
-  padding-bottom: 0;
-  padding-top: 0; }
-
 .o-content {
   height: 100%;
   width: 100%;
@@ -184,6 +177,24 @@ hr {
 .c-header__brand .pure-menu-heading {
   color: #38ABC8; }
 
+.c-event {
+  background: url("/media/background_triangle/triange_blue.svg");
+  background-size: cover; }
+
+.c-event__logo {
+  display: none;
+  background: url("/media/sunjs_white.png") no-repeat;
+  background-size: 75%;
+  background-position: 50%; }
+
+.c-event__about {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 15px 45px 45px; }
+
+@media screen and (min-width: 64em) {
+  .c-event__logo {
+    display: block; } }
 .page img {
   width: 100%; }
 
@@ -329,23 +340,6 @@ section h2 span {
   position: relative;
   top: -63px;
   right: -120px; }
-
-#event {
-  background: url("/media/background_triangle/triange_blue.svg");
-  background-size: cover; }
-  #event #about {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 150px;
-    background: white url("/media/square.png") no-repeat;
-    background-position: 50% 10px;
-    background-size: 150px;
-    text-align: center; }
-  #event #sunjs {
-    display: none;
-    background: url("/media/sunjs_white.png") no-repeat;
-    background-size: 100%;
-    background-position: 50%; }
 
 #venue {
   background: url("/media/borncc.jpg") no-repeat;
@@ -557,11 +551,6 @@ footer {
   .speakers {
     padding-left: 8.3334%; }
 
-  #event {
-    padding-left: 8.3334%; }
-    #event .content {
-      padding: 35px; }
-
   footer {
     padding: 0; }
     footer .meta,
@@ -588,18 +577,6 @@ footer {
   .speakers {
     padding-left: 16.6667%; }
 
-  #event {
-    padding-left: 0; }
-    #event #about {
-      background: white;
-      padding: 0;
-      margin: 0 0 0 25%; }
-      #event #about h2,
-      #event #about p {
-        margin: 15px; }
-    #event #sunjs {
-      display: block; }
-
   #venue {
     padding-left: 0; }
     #venue .content {
@@ -622,17 +599,7 @@ footer {
     margin-left: 25%; }
     #venue .content h2,
     #venue .content p {
-      padding: 25px; }
-
-  #event #about {
-    margin-left: 25%;
-    text-align: left; }
-    #event #about h2,
-    #event #about p {
-      padding: 25px; }
-  #event #sunjs {
-    background-size: auto;
-    background-position: 50%; } }
+      padding: 25px; } }
 @media screen and (max-width: 62em) {
   .mediterranean-menu-screen {
     height: 50px; }
