@@ -1,7 +1,7 @@
 ---
 name: Dheerja Kaur
 twitter: dheerja
-tagline: Product @ ESPN
+tagline: Product @ theSkimm
 
 ---
 
