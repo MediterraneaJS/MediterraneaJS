@@ -1,0 +1,24 @@
+.c-event {
+  background: url("/media/background_triangle/triange_blue.svg");
+  background-size: cover;
+
+}
+
+.c-event__logo {
+  display: none;
+  background: url("/media/sunjs_white.png") no-repeat;
+  background-size: 75%;
+  background-position: 50%;
+}
+
+.c-event__about {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 15px 45px 45px;
+}
+
+@media screen and (min-width:64em) {
+  .c-event__logo {
+    display: block;
+  }
+}

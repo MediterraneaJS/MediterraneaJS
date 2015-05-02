@@ -57,21 +57,12 @@ hr {
 .promovideo {
   height: 125px;
 }
-.center {
-  text-align: center;
-}
-.right {
-  text-align: right;
-}
-.nav-logo span {
-  display: none;
-}
-.pure-menu {
-  padding-bottom: 0;
-  padding-top: 0;
-}
+
+@import "util/text";
 @import "objects/content";
 @import "components/menu";
+@import "components/event";
+
 .page img {
   width: 100%;
 }
@@ -254,25 +245,7 @@ section {
     right: -120px;
   }
 }
-#event {
-  background: url("/media/background_triangle/triange_blue.svg");
-  background-size: cover;
-  #about {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 150px;
-    background: white url("/media/square.png") no-repeat;
-    background-position: 50% 10px;
-    background-size: 150px;
-    text-align: center;
-  }
-  #sunjs {
-    display: none;
-    background: url("/media/sunjs_white.png") no-repeat;
-    background-size: 100%;
-    background-position: 50%;
-  }
-}
+
 #venue {
   background: url("/media/borncc.jpg") no-repeat;
   background-size: cover;
@@ -548,12 +521,7 @@ footer {
   .speakers {
     padding-left: 8.3334%;
   }
-  #event {
-    padding-left: 8.3334%;
-    .content {
-      padding: 35px;
-    }
-  }
+
   footer {
     padding: 0;
     .meta,
@@ -584,21 +552,7 @@ footer {
   .speakers {
     padding-left: 16.6667%;
   }
-  #event {
-    padding-left: 0;
-    #about {
-      background: white;
-      padding: 0;
-      margin: 0 0 0 25%;
-      h2,
-      p {
-        margin: 15px;
-      }
-    }
-    #sunjs {
-      display: block;
-    }
-  }
+
   #venue {
     padding-left: 0;
     .content {
@@ -629,20 +583,6 @@ footer {
       p {
         padding: 25px;
       }
-    }
-  }
-  #event {
-    #about {
-      margin-left: 25%;
-      text-align: left;
-      h2,
-      p {
-        padding: 25px;
-      }
-    }
-    #sunjs {
-      background-size: auto;
-      background-position: 50%;
     }
   }
 }
