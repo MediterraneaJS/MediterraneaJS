@@ -1,18 +1,25 @@
-[
-  {
-    "name": "Wuaki.tv",
-    "id": "wuaki",
-    "url": "http://wuaki.tv",
-    "logo": "wuaki.jpg"
+{
+  "synchronous": [{
+    "name": "Sauce Labs",
+    "id": "saucelabs",
+    "url": "https://saucelabs.com",
+    "logo": "saucelabs.png"
+    }],
+  "supporters": [{
+      "name": "Wuaki.tv",
+      "id": "wuaki",
+      "url": "http://wuaki.tv",
+      "logo": "wuaki.jpg"
     },
-  {
-    "name": "DigitalOcean",
-    "id": "digitalocean",
-    "url": "http://digitalocean.com",
-    "logo": "digitalocean.png"
+    {
+      "name": "DigitalOcean",
+      "id": "digitalocean",
+      "url": "http://digitalocean.com",
+      "logo": "digitalocean.png"
   }, {
-    "name": "npm",
-    "id": "npm",
-    "url": "http://npmjs.com",
-    "logo": "npm.png"
+      "name": "npm",
+      "id": "npm",
+      "url": "http://npmjs.com",
+      "logo": "npm.png"
     }]
+}
