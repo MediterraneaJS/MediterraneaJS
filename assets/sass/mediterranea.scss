@@ -22,6 +22,12 @@ a {
 dt {
   margin-top: 25px;
 }
+h5 {
+  margin-bottom: 0;
+}
+h6 {
+  margin: 0;
+}
 .page {
   padding: 0 55px;
   .meta dl {
@@ -474,7 +480,7 @@ footer {
   color: white;
   font-size: 65%;
   background-color: $darkblue;
-  min-height: 400px;
+  min-height: 450px;
   h5 {
     font-size: 110%;
   }

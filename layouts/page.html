@@ -89,7 +89,7 @@ Organised by BarcelonaJS for the community.">
             </div>
           </div>
           <hr />
-          <ul  class="intro-pros">
+          <ul class="intro-pros">
             <li>2 days of talks from 24 awesome speakers</li>
             <li>Mediterranean style catering during the conference</li>
             <li>Pre-conference workshops and leisure activities</li>
@@ -102,13 +102,20 @@ Organised by BarcelonaJS for the community.">
 
     <section id="sponsors-banner" class="pure-g">
       <ul class="pure-u-1-1">
-        {{#sponsors}}
+        {{#sponsors.synchronous}}
         <li>
           <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
             <span>{{name}}</span>
           </a>
         </li>
-        {{/sponsors}}
+        {{/sponsors.synchronous}}
+        {{#sponsors.supporters}}
+        <li>
+          <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
+            <span>{{name}}</span>
+          </a>
+        </li>
+        {{/sponsors.supporters}}
       </ul>
     </section>
 
@@ -122,14 +129,25 @@ Organised by BarcelonaJS for the community.">
           <span>Thanks to our Sponsors</span>
         </h2>
       </header>
+      <h3 class="pure-u-1-1">Synchronous</h3>
       <ul class="pure-u-1-1">
-        {{#sponsors}}
+        {{#sponsors.synchronous}}
         <li>
           <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
             <span>{{name}}</span>
           </a>
         </li>
-        {{/sponsors}}
+        {{/sponsors.synchronous}}
+      </ul>
+      <h3 class="pure-u-1-1">Supporters</h3>
+      <ul class="pure-u-1-1">
+        {{#sponsors.supporters}}
+        <li>
+          <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
+            <span>{{name}}</span>
+          </a>
+        </li>
+        {{/sponsors.supporters}}
       </ul>
       <div class="pure-u-1-1 center">
         <a href="mailto:sponsors@mediterraneajs.eu?subject=Sponsor Opportunity">Get in touch for our sponsorship opportunities.</a>
@@ -177,12 +195,21 @@ Organised by BarcelonaJS for the community.">
         </div>
         <div class="sponsors pure-u-1-3 pure-u-md-1-4">
           <h5>Thanks to our Sponsors</h5>
+          <h6>Synchronous</h6>
           <ul>
-            {{#sponsors}}
+            {{#sponsors.synchronous}}
             <li>
               <a href="{{url}}">{{name}}</a>
             </li>
-            {{/sponsors}}
+            {{/sponsors.synchronous}}
+          </ul>
+          <h6>Supporters</h6>
+          <ul>
+            {{#sponsors.supporters}}
+            <li>
+              <a href="{{url}}">{{name}}</a>
+            </li>
+            {{/sponsors.supporters}}
           </ul>
           <h5>and Partners</h5>
           <ul>
