@@ -76,25 +76,31 @@
         "speaker": "Garann Means",
         "id": "garann_means"
      },
-      {
+           {
         "time": "16:25h",
+        "title": "Progressive Enhancement",
+        "speaker": "Roman Stranghoner",
+        "id": "roman_stranghoener"
+     },
+      {
+        "time": "17:00h",
         "title": "Understanding a community lifecycle",
         "speaker": "David Dias",
         "id": "david_dias"
      },
       {
-        "time": "17:00h",
+        "time": "17:30h",
         "title": "tba",
         "speaker": "Alvaro Lopez Ortega",
         "id": "alvaro_lopez"
      },
       {
-        "time": "17:30h",
+        "time": "18:00h",
         "title": "Coffee break",
         "class": "agenda-break"
      },
       {
-        "time": "18:00h",
+        "time": "18:30h",
         "title": "Speaker Q&A Session 1",
         "class": "agenda-qa"
      },
