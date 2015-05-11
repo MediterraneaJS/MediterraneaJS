@@ -1,4 +1,10 @@
 {
+  "asynchronous": [{
+    "name": "MailChimp",
+    "id": "mailchimp",
+    "url": "http://mailchimp.com",
+    "logo": "mailchimp.png"
+    }],
   "synchronous": [{
     "name": "Sauce Labs",
     "id": "saucelabs",
@@ -11,6 +17,12 @@
       "url": "http://wuaki.tv",
       "logo": "wuaki.jpg"
     },
+    {
+      "name": "TOKIOTA",
+      "id": "tokiota",
+      "url": "http://tokiota.com",
+      "logo": "tokiota.png"
+      },
     {
       "name": "DigitalOcean",
       "id": "digitalocean",

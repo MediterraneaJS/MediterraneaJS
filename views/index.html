@@ -30,6 +30,13 @@
 
 <section id="sponsors-banner" class="pure-g">
   <ul class="pure-u-1-1">
+    {{#sponsors.asynchronous}}
+    <li>
+      <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
+        <span>{{name}}</span>
+      </a>
+    </li>
+    {{/sponsors.asynchronous}}
     {{#sponsors.synchronous}}
     <li>
       <a href="{{url}}" id="sponsors-{{id}}" style="background-image: url(/media/sponsors/{{logo}})">
