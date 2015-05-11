@@ -13,18 +13,18 @@
     "id": "alvaro_lopez"
   },
   {
-    "name": "Belen Albeza",
-    "twitter": "ladybenko",
-    "tagline": "Computer engineer & game developer",
-    "talk": "Game Development with JS and Phaser",
-    "id": "belen_albeza"
-  },
-  {
     "name": "C J Silverio",
     "twitter": "ceejbot",
     "tagline": "Cats, climbing, weightlifting, and node.js",
     "talk": null,
     "id": "cj_silverio"
+  },
+  {
+    "name": "Belen Albeza",
+    "twitter": "ladybenko",
+    "tagline": "Computer engineer & game developer",
+    "talk": "Game Development with JS and Phaser",
+    "id": "belen_albeza"
   },
   {
     "name": "Daniela Borges",
