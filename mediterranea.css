@@ -274,6 +274,42 @@ section h2 span {
     background: white;
     color: #38ABC8; }
 
+#page-intro {
+  background: url("/media/background_triangle/triange_blue.svg") repeat center;
+  color: white;
+  text-align: center; }
+  #page-intro a {
+    color: white; }
+  #page-intro .header {
+    z-index: 99999; }
+    #page-intro .header h1 {
+      text-transform: uppercase;
+      margin-left: 0; }
+    #page-intro .header p {
+      margin-left: 0; }
+  #page-intro h2 {
+    line-height: 1.2em;
+    margin: 0;
+    text-transform: uppercase; }
+  #page-intro .address a,
+  #page-intro .address span {
+    font-family: 'Merriweather', serif;
+    font-style: italic; }
+  #page-intro .address div {
+    display: inline; }
+  #page-intro .buy-tickets {
+    font-family: 'Montserrat', serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 125%;
+    border: 1px solid white;
+    padding: 15px;
+    background: transparent;
+    text-transform: uppercase; }
+  #page-intro .buy-tickets:hover {
+    background: white;
+    color: #38ABC8; }
+
 #speakers {
   background: #374548;
   padding-bottom: 50px; }
@@ -546,10 +582,10 @@ footer {
   .promovideo {
     height: 370px; }
 
-  #intro {
+  #page-intro, #intro {
     text-align: left;
     background: url("/media/beach.jpg") repeat-x center; }
-    #intro .header {
+    #page-intro .header, #intro .header {
       margin-left: 50%;
       padding-left: 25px; }
 
