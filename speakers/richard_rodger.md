@@ -3,6 +3,7 @@ name: Richard Rodger
 twitter: rjrodger
 tagline: CTO/Founder at nearform.com
 talk: Measuring Micro-services
+
 ---
 
 ![Richard Rodger](/media/speakers/richard_rodger.jpg)

@@ -3,6 +3,7 @@ name: Alvaro Lopez
 twitter: alobbs
 tagline:
 talk: OpenStack
+
 ---
 
 ![Alvaro Lopez](/media/speakers/alvaro_lopez.jpg)

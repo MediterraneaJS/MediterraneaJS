@@ -3,6 +3,7 @@ name: Luke Bond
 twitter: lukeb0nd
 tagline:
 talk: Building PAZ.sh
+
 ---
 
 ![Luke Bond](/media/speakers/luke_bond.jpg)

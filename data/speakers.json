@@ -90,7 +90,7 @@
     "name": "Kris Kowal",
     "twitter": "kriskowal",
     "tagline": "Open Sourcerer",
-    "talk": "General Theory of Reactivity",
+    "talk": "Reactive Theory",
     "id": "kris_kowal"
   },
   {
@@ -111,6 +111,7 @@
     "name": "Maciej Małecki",
     "twitter": "maciejmalecki",
     "tagline": "I find things funny. @npmjs @spacedock_io.",
+    "talk": "Building architectures the easier way",
     "id": "maciej_malecki"
   },
   {

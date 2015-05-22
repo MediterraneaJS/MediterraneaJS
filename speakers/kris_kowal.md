@@ -2,7 +2,8 @@
 name: Kris Kowal
 twitter: kriskowal
 tagline: Open Sourcerer
-talk: General Theory of Reactivity
+talk: Reactive Theory
+
 ---
 
 ![Kris Kowal](/media/speakers/kris_kowal.jpg)
