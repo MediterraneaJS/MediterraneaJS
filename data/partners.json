@@ -22,6 +22,12 @@
     "logo": "cooltra.jpg",
     "url": "http://www.cooltra.com"
 },
+{
+  "name": "Makers of Barcelona",
+  "id": "mob",
+  "logo": "mob.png",
+  "url": "http://www.mob-barcelona.com"
+},
   {
     "name": "Miniguide",
     "id": "miniguide",
