@@ -34,6 +34,11 @@
     "logo": "miniguide.jpg",
     "url": "http://www.miniguide.es"
 }, {
+  "name": "EatWith",
+  "id": "eatwith",
+  "logo": "eatwith.png",
+  "url": "http://www.eatwith.com/list/spain/barcelona/"
+}, {
     "name": "Talent Garden Barcelona",
     "id": "talentgarden",
     "logo": "talentgarden.png",
