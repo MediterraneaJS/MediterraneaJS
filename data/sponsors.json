@@ -18,11 +18,22 @@
       "logo": "wuakitv.png"
     },
     {
+        "name": "blended.io",
+        "id": "blended",
+        "url": "http://blended.io",
+        "logo": "blended.png"
+      },
+    {
       "name": "TOKIOTA",
       "id": "tokiota",
       "url": "http://tokiota.com",
       "logo": "tokiota.png"
-      },
+      },{
+        "name": "Hack&Craft",
+        "id": "hackandcraft",
+        "url": "http://hackandcraft.com",
+        "logo": "hackandcraft.png"
+        },
     {
       "name": "DigitalOcean",
       "id": "digitalocean",
