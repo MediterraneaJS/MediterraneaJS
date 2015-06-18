@@ -4,7 +4,7 @@
     "sessions": [
       {
         "time": "9:30h",
-        "title": "Registration and Breakfast",
+        "title": "Registration",
         "class": "agenda-info"
      },
       {
@@ -126,12 +126,7 @@
     "sessions": [
       {
         "time": "9:30h",
-        "title": "Breakfast",
-        "class": "agenda-info"
-     },
-      {
-        "time": "9:55h",
-        "title": "Welcome Day 2",
+        "title": "Day opening",
         "class": "agenda-info"
      },
       {
