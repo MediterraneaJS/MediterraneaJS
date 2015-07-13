@@ -34,3 +34,4 @@ dist/
 .publish
 views/speakers/
 views/speakers
+/nbproject/private/
