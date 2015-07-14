@@ -575,6 +575,10 @@ footer {
   footer .links {
     display: none; }
 
+span.thankyou {
+  font-size: 46px;
+  font-family: 'Montserrat', serif; }
+
 @media screen and (max-width: 47.99999em) {
   ul.intro-pros li {
     display: block; } }
