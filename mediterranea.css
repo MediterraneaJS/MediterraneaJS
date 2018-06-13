@@ -94,7 +94,7 @@ hr {
     height: 55px;
     margin-right: 0; } }
 .c-header__brand__logo {
-  background: url("/media/mediterraneajs.png") no-repeat center;
+  background: url("https://mediterraneajs.github.io/MediterraneaJS/media/mediterraneajs.png") no-repeat center;
   background-size: 100%;
   display: block;
   height: 80px;
@@ -104,7 +104,7 @@ hr {
 
 @media screen and (max-width: 62em) {
   .c-header__brand__logo {
-    background: url("/media/sunjs.png") no-repeat center;
+    background: url("https://mediterraneajs.github.io/MediterraneaJS/media/sunjs.png") no-repeat center;
     background-size: 53px 53px;
     height: 55px;
     margin: auto;
@@ -184,12 +184,12 @@ hr {
   color: #38ABC8; }
 
 .c-event {
-  background: url("/media/background_triangle/triange_blue.svg");
+  background: url("https://mediterraneajs.github.io/MediterraneaJS/media/background_triangle/triange_blue.svg");
   background-size: cover; }
 
 .c-event__logo {
   display: none;
-  background: url("/media/sunjs_white.png") no-repeat;
+  background: url("https://mediterraneajs.github.io/MediterraneaJS/media/sunjs_white.png") no-repeat;
   background-size: 75%;
   background-position: 50%; }
 
@@ -206,7 +206,7 @@ hr {
 
 .walking {
   height: 32px;
-  background: white url("/media/walking.png") no-repeat;
+  background: white url("https://mediterraneajs.github.io/MediterraneaJS/media/walking.png") no-repeat;
   background-size: 30px;
   padding-left: 35px; }
 
@@ -239,7 +239,7 @@ section h2 span {
     border-bottom: 3px solid black; }
 
 #intro {
-  background: url("/media/background_triangle/triange_blue.svg") repeat center;
+  background: url("https://mediterraneajs.github.io/MediterraneaJS/media/background_triangle/triange_blue.svg") repeat center;
   color: white;
   text-align: center; }
   #intro a {
@@ -275,7 +275,7 @@ section h2 span {
     color: #38ABC8; }
 
 #page-intro {
-  background: url("/media/background_triangle/triange_blue.svg") repeat center;
+  background: url("https://mediterraneajs.github.io/MediterraneaJS/media/background_triangle/triange_blue.svg") repeat center;
   color: white;
   text-align: center; }
   #page-intro a {
@@ -384,7 +384,7 @@ section h2 span {
   right: -120px; }
 
 #venue {
-  background: url("/media/borncc.jpg") no-repeat;
+  background: url("https://mediterraneajs.github.io/MediterraneaJS/media/borncc.jpg") no-repeat;
   background-size: cover;
   height: 500px; }
   #venue .content {
@@ -395,7 +395,7 @@ section h2 span {
     display: none; }
 
 #schedule article {
-  background: url("/media/background_triangle/triangulos_darkgray.svg");
+  background: url("https://mediterraneajs.github.io/MediterraneaJS/media/background_triangle/triangulos_darkgray.svg");
   background-size: 2000px;
   padding-bottom: 50px; }
 #schedule .schedule-saturday {
@@ -588,7 +588,7 @@ span.thankyou {
 
   #page-intro, #intro {
     text-align: left;
-    background: url("/media/beach.jpg") repeat-x center; }
+    background: url("https://mediterraneajs.github.io/MediterraneaJS/media/beach.jpg") repeat-x center; }
     #page-intro .header, #intro .header {
       margin-left: 50%;
       padding-left: 25px; }
